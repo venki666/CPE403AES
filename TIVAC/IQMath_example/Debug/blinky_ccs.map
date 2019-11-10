@@ -1,0 +1,295 @@
+******************************************************************************
+                  TI ARM Linker PC v19.6.0                     
+******************************************************************************
+>> Linked Wed Oct 16 00:47:16 2019
+
+OUTPUT FILE NAME:   <IQMath_example.out>
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 000038e5
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00040000  000039e4  0003c61c  R  X
+  SRAM                  20000000   00008000  00000204  00007dfc  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    000039e8   000039e8    r-x
+  00000000    00000000    0000026c   0000026c    r-- .intvecs
+  0000026c    0000026c    00003730   00003730    r-x .text
+  000039a0    000039a0    00000030   00000030    r-- .const
+  000039d0    000039d0    00000018   00000018    r-- .cinit
+20000000    20000000    00000204   00000000    rw-
+  20000000    20000000    00000200   00000000    rw- .stack
+  20000200    20000200    00000004   00000000    rw- .data
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    0000026c     
+                  00000000    0000026c     startup_ccs.obj (.intvecs)
+
+.text      0    0000026c    00003730     
+                  0000026c    00001800     IQmathLib.lib : IQtables.obj (.text:asin_table_polynomial)
+                  00001a6c    000009c0     rtsv7M4_T_le_v4SPD16_eabi.lib : e_pow.c.obj (.text:pow)
+                  0000242c    00000800     IQmathLib.lib : IQtables.obj (.text:isqrt_table)
+                  00002c2c    000001b6     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_add_t2.asm.obj (.text)
+                  00002de2    00000002     startup_ccs.obj (.text:FaultISR)
+                  00002de4    00000158     rtsv7M4_T_le_v4SPD16_eabi.lib : e_sqrt.c.obj (.text:sqrt)
+                  00002f3c    00000136                                   : fd_div_t2.asm.obj (.text)
+                  00003072    00000002     startup_ccs.obj (.text:IntDefaultHandler)
+                  00003074    00000110     rtsv7M4_T_le_v4SPD16_eabi.lib : s_scalbn.c.obj (.text:scalbn)
+                  00003184    000000fc     IQmathLib.lib : IQtables.obj (.text:asin_table_flat)
+                  00003280    000000fc     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_mul_t2.asm.obj (.text)
+                  0000337c    000000f4     driverlib.lib : sysctl.obj (.text:SysCtlClockSet)
+                  00003470    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.asm.obj (.text)
+                  0000350c    00000090     IQmathLib.lib : IQNdiv.obj (.text:_IQ16div)
+                  0000359c    0000008c                   : IQNasin.obj (.text:_IQ16asin)
+                  00003628    00000088                   : IQNmag.obj (.text:_IQ16mag)
+                  000036b0    00000086     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_cmp_t2.asm.obj (.text:__aeabi_cdcmple)
+                  00003736    00000086                                   : fd_cmp_t2.asm.obj (.text:__aeabi_cdrcmple)
+                  000037bc    0000007c     iqmath_example.obj (.text:main)
+                  00003838    00000068     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
+                  000038a0    00000044                                   : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit:__TI_auto_init_nobinit_nopinit)
+                  000038e4    00000034                                   : boot_cortex_m.c.obj (.text:_c_int00_noargs:_c_int00_noargs)
+                  00003918    0000002e                                   : i_tofd_t2.asm.obj (.text)
+                  00003946    0000001a                                   : s_copysign.c.obj (.text:copysign)
+                  00003960    00000010     IQmathLib.lib : IQNmpy.obj (.text:_IQ16mpy)
+                  00003970    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  0000397e    00000002     startup_ccs.obj (.text:NmiSR)
+                  00003980    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : errno.c.obj (.text:__aeabi_errno_addr)
+                  00003988    00000006     startup_ccs.obj (.text:ResetISR)
+                  0000398e    00000006     driverlib.lib : sysctl.obj (.text:SysCtlDelay)
+                  00003994    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
+                  00003998    00000004                                   : exit.c.obj (.text:abort:abort)
+
+.const     0    000039a0    00000030     
+                  000039a0    00000030     rtsv7M4_T_le_v4SPD16_eabi.lib : e_pow.c.obj (.const:$O1$$)
+
+.cinit     0    000039d0    00000018     
+                  000039d0    00000008     (__TI_handler_table)
+                  000039d8    00000007     (.cinit..data.load) [load image, compression = lzss]
+                  000039df    00000001     --HOLE-- [fill = 0]
+                  000039e0    00000008     (__TI_cinit_table)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.data      0    20000200    00000004     UNINITIALIZED
+                  20000200    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : errno.c.obj (.data)
+
+.stack     0    20000000    00000200     UNINITIALIZED
+                  20000000    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.stack)
+                  20000004    000001fc     --HOLE--
+
+__llvm_prf_cnts 
+*          0    20000000    00000000     UNINITIALIZED
+
+MODULE SUMMARY
+
+       Module                       code   ro data   rw data
+       ------                       ----   -------   -------
+    .\
+       startup_ccs.obj              12     620       0      
+       iqmath_example.obj           124    0         0      
+    +--+----------------------------+------+---------+---------+
+       Total:                       136    620       0      
+                                                            
+    C:/ti/tivaware_c_series_2_1_4_178/IQmath/ccs/IQmathLib/Debug/IQmathLib.lib
+       IQtables.obj                 0      8444      0      
+       IQNdiv.obj                   144    0         0      
+       IQNasin.obj                  140    0         0      
+       IQNmag.obj                   136    0         0      
+       IQNmpy.obj                   16     0         0      
+    +--+----------------------------+------+---------+---------+
+       Total:                       436    8444      0      
+                                                            
+    C:/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib
+       sysctl.obj                   250    0         0      
+    +--+----------------------------+------+---------+---------+
+       Total:                       250    0         0      
+                                                            
+    C:\ti\ccs910\ccs\tools\compiler\ti-cgt-arm_19.6.0.STS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
+       e_pow.c.obj                  2496   48        0      
+       fd_add_t2.asm.obj            438    0         0      
+       e_sqrt.c.obj                 344    0         0      
+       fd_div_t2.asm.obj            310    0         0      
+       s_scalbn.c.obj               272    0         0      
+       fd_cmp_t2.asm.obj            268    0         0      
+       fd_mul_t2.asm.obj            252    0         0      
+       memcpy_t2.asm.obj            156    0         0      
+       copy_decompress_lzss.c.obj   104    0         0      
+       autoinit.c.obj               68     0         0      
+       boot_cortex_m.c.obj          52     0         0      
+       i_tofd_t2.asm.obj            46     0         0      
+       s_copysign.c.obj             26     0         0      
+       copy_decompress_none.c.obj   14     0         0      
+       errno.c.obj                  8      0         4      
+       exit.c.obj                   4      0         0      
+       pre_init.c.obj               4      0         0      
+    +--+----------------------------+------+---------+---------+
+       Total:                       4862   48        4      
+                                                            
+       Stack:                       0      0         512    
+       Linker Generated:            0      23        0      
+    +--+----------------------------+------+---------+---------+
+       Grand Total:                 5684   9135      516    
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 000039e0 records: 1, size/record: 8, table size: 8
+	.data: load addr=000039d8, load size=00000007 bytes, run addr=20000200, run size=00000004 bytes, compression=lzss
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 000039d0 records: 2, size/record: 4, table size: 8
+	index: 0, handler: __TI_decompress_lzss
+	index: 1, handler: __TI_decompress_none
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                          
+-------   ----                          
+00003999  C$$EXIT                       
+00003989  ResetISR                      
+0000337d  SysCtlClockSet                
+0000398f  SysCtlDelay                   
+0000359d  _IQ16asin                     
+0000350d  _IQ16div                      
+00003629  _IQ16mag                      
+00003961  _IQ16mpy                      
+20000200  __STACK_END                   
+00000200  __STACK_SIZE                  
+20000200  __STACK_TOP                   
+000039e0  __TI_CINIT_Base               
+000039e8  __TI_CINIT_Limit              
+000039d0  __TI_Handler_Table_Base       
+000039d8  __TI_Handler_Table_Limit      
+000038a1  __TI_auto_init_nobinit_nopinit
+00003839  __TI_decompress_lzss          
+00003971  __TI_decompress_none          
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+00000000  __TI_static_base__            
+000036b1  __aeabi_cdcmpeq               
+000036b1  __aeabi_cdcmple               
+00003737  __aeabi_cdrcmple              
+00002c37  __aeabi_dadd                  
+00002f3d  __aeabi_ddiv                  
+00003281  __aeabi_dmul                  
+00002c2d  __aeabi_dsub                  
+00003981  __aeabi_errno_addr            
+00003919  __aeabi_i2d                   
+00003471  __aeabi_memcpy                
+00003471  __aeabi_memcpy4               
+00003471  __aeabi_memcpy8               
+ffffffff  __binit__                     
+ffffffff  __c_args__                    
+UNDEFED   __mpu_init                    
+20000000  __stack                       
+20000000  __start___llvm_prf_cnts       
+20000000  __stop___llvm_prf_cnts        
+000038e5  _c_int00_noargs               
+UNDEFED   _system_post_cinit            
+00003995  _system_pre_init              
+00003999  abort                         
+00003184  asin_table_flat               
+0000026c  asin_table_polynomial         
+ffffffff  binit                         
+00003947  copysign                      
+00003947  copysignl                     
+20000200  errno                         
+00000000  g_pfnVectors                  
+0000242c  isqrt_table                   
+00003075  ldexp                         
+00003075  ldexpl                        
+000037bd  main                          
+00003471  memcpy                        
+00001a6d  pow                           
+00001a6d  powl                          
+00003075  scalbn                        
+00003075  scalbnl                       
+00002de5  sqrt                          
+00002de5  sqrtl                         
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                          
+-------   ----                          
+00000000  __TI_static_base__            
+00000000  g_pfnVectors                  
+00000200  __STACK_SIZE                  
+0000026c  asin_table_polynomial         
+00001a6d  pow                           
+00001a6d  powl                          
+0000242c  isqrt_table                   
+00002c2d  __aeabi_dsub                  
+00002c37  __aeabi_dadd                  
+00002de5  sqrt                          
+00002de5  sqrtl                         
+00002f3d  __aeabi_ddiv                  
+00003075  ldexp                         
+00003075  ldexpl                        
+00003075  scalbn                        
+00003075  scalbnl                       
+00003184  asin_table_flat               
+00003281  __aeabi_dmul                  
+0000337d  SysCtlClockSet                
+00003471  __aeabi_memcpy                
+00003471  __aeabi_memcpy4               
+00003471  __aeabi_memcpy8               
+00003471  memcpy                        
+0000350d  _IQ16div                      
+0000359d  _IQ16asin                     
+00003629  _IQ16mag                      
+000036b1  __aeabi_cdcmpeq               
+000036b1  __aeabi_cdcmple               
+00003737  __aeabi_cdrcmple              
+000037bd  main                          
+00003839  __TI_decompress_lzss          
+000038a1  __TI_auto_init_nobinit_nopinit
+000038e5  _c_int00_noargs               
+00003919  __aeabi_i2d                   
+00003947  copysign                      
+00003947  copysignl                     
+00003961  _IQ16mpy                      
+00003971  __TI_decompress_none          
+00003981  __aeabi_errno_addr            
+00003989  ResetISR                      
+0000398f  SysCtlDelay                   
+00003995  _system_pre_init              
+00003999  C$$EXIT                       
+00003999  abort                         
+000039d0  __TI_Handler_Table_Base       
+000039d8  __TI_Handler_Table_Limit      
+000039e0  __TI_CINIT_Base               
+000039e8  __TI_CINIT_Limit              
+20000000  __stack                       
+20000000  __start___llvm_prf_cnts       
+20000000  __stop___llvm_prf_cnts        
+20000200  __STACK_END                   
+20000200  __STACK_TOP                   
+20000200  errno                         
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+ffffffff  __binit__                     
+ffffffff  __c_args__                    
+ffffffff  binit                         
+UNDEFED   __mpu_init                    
+UNDEFED   _system_post_cinit            
+
+[62 symbols]
