@@ -26,7 +26,7 @@
 #include "utils/uartstdio.h"
 
 #define SLAVE_ADDRESS           0x40
-#define AMBIENT_TEMPERATURE     0xE0
+#define AMBIENT_TEMPERATURE     0xF3
 
 
 void ConfigureUART(void);
@@ -39,6 +39,7 @@ void Ambient_Temp(uint8_t ambient_temp_reg);
 
 int main(void)
 {
+    uint16_t TemperatureR, TemperatureF;
     FPULazyStackingEnable();
 
     // Set the clocking to run directly from the crystal
@@ -68,13 +69,13 @@ int main(void)
       while(I2CMasterBusy(I2C0_BASE))
       {
       }
-      uint16_t Temperature = I2C_TempRead();
+      TemperatureR = I2C_TempRead();
 
-      uint16_t Temperaturef = ((175.25 * Temperature) / 65536.0) - 46.85;
+      TemperatureF = ((175.25 * TemperatureR) / 65536.0) - 46.85;
 
       SysCtlDelay(SysCtlClockGet()/10/3);
       UARTprintf("Received Temperature data from Si7021: \n\r");
-      UARTprintf("Si7021 I2C Sensor temperature readings: %u *C\n\r", Temperaturef);
+      UARTprintf("Si7021 I2C Sensor temperature readings: %u *C\n\r", TemperatureF);
       SysCtlDelay(5000000);
 
       //////////////////////////////////////////////////////////////////////
@@ -170,7 +171,7 @@ uint16_t I2C_readMode()
   UpperByte = I2CMasterDataGet(I2C0_BASE);
 
   // Get second byte from slave and nack for complete
-  I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_RECEIVE_FINISH);
+  I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_RECEIVE_CONT);
   while(I2CMasterBusy(I2C0_BASE));
   LowerByte = I2CMasterDataGet(I2C0_BASE);
 
@@ -193,7 +194,7 @@ uint16_t I2C_TempRead()
   UpperByte = I2CMasterDataGet(I2C0_BASE);
 
   // Get second byte from slave and nack for complete
-  I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_RECEIVE_CONT);
+  I2CMasterControl(I2C0_BASE,  I2C_MASTER_CMD_BURST_SEND_CONT);
 
   while(I2CMasterBusy(I2C0_BASE));
   LowerByte = I2CMasterDataGet(I2C0_BASE);
