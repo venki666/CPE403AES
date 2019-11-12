@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="configPkg" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/app_pem3.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="C:/Users/venkim/workspace_v9/sensor_CC1350_LAUNCHXL_tirtos_ccs/app.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/app_pem3.mak" src="package.bld"/>
+        <srcFile name="package/cfg/app_pem3.oem3.dep" src="package/cfg/app_pem3.c"/>
+        <srcFile name="package/cfg/app_pem3.dep" src="package/cfg/app_pem3.cfg"/>
+        <srcFile name="package/cfg/app.xem3.mak" src="package.bld"/>
+        <srcFile name="package/rel/configPkg.tar.dep" src="package/rel/configPkg.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.arm.elf.M3"
+            version="ti.targets.arm.elf.M3{1,0,19.6,0"
+            rawVersion="19.6.0"
+            platform="ti.platforms.simCM3"
+            isa="v7M"
+            suffix="em3"
+            rootDir="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_19.6.0.STS"
+            os="undefined"
+            rts="ti.targets.arm.rtsarm">
+            <model endian="little"
+                codeModel="thumb2"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="app"
+        pname="app.pem3"
+        target="ti.targets.arm.elf.M3"
+        platform="ti.platforms.simplelink:CC1350F128"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/app_pem3.cfg"
+        xCfgPrefix="package/cfg/app_pem3"
+        cfgScript="C:/Users/venkim/workspace_v9/sensor_CC1350_LAUNCHXL_tirtos_ccs/app.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="app"
+        pname="app.xem3"
+        target="ti.targets.arm.elf.M3"
+        platform="ti.platforms.simplelink:CC1350F128"
+        profile="release"
+        xCfgScript="package/cfg/app_pem3.cfg"
+        xCfgPrefix="package/cfg/app_pem3"
+        cfgScript="C:/Users/venkim/workspace_v9/sensor_CC1350_LAUNCHXL_tirtos_ccs/app.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="app.xem3"
+        args=""
+        groupName="app.xem3"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="configPkg"
+        pname="configPkg.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

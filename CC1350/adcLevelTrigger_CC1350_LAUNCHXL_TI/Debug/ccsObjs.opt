@@ -1,0 +1,1 @@
+"./CC1350_LAUNCHXL.obj" "./ccfg.obj" "./empty_min.obj" "./scif.obj" "./scif_framework.obj" "./scif_osal_tirtos.obj" "../CC1350_LAUNCHXL.cmd" -l"configPkg/linker.cmd" -l"C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
