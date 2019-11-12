@@ -1,0 +1,1 @@
+"./Si7021_simple.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "../hello_ccs.cmd" -llibc.a -l"C:/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib" 
