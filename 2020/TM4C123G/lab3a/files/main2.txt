@@ -1,0 +1,32 @@
+#include <inc/hw_types.h>
+#include <inc/hw_memmap.h>
+#include <driverlib/gpio.h>
+#include <driverlib/sysctl.h>
+#include <inc/hw_gpio.h> 
+
+int main(void)
+{
+
+	SysCtlClockSet(SYSCTL_SYSDIV_5|SYSCTL_USE_PLL|SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+	//Set PF0 as input pin
+	GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, GPIO_PIN_0);
+	//Unlocks the GPIO pin PF0
+	HWREG(GPIO_PORTF_BASE+GPIO_O_LOCK) = GPIO_LOCK_KEY_DD;
+	HWREG(GPIO_PORTF_BASE+GPIO_O_CR) = 0x01;
+
+	GPIOPadConfigSet(GPIO_PORTF_BASE, GPIO_PIN_0, GPIO_STRENGTH_4MA, GPIO_PIN_TYPE_STD_WPU);
+	//Set PF1(RED LED) as output
+	GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1);
+	//Turn of the LED
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0);
+
+	while(1)
+	{
+		//Check if button is pressed.
+		if(!GPIOPinRead(GPIO_PORTF_BASE, GPIO_PIN_0))
+			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 2);
+		else
+			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0);
+	}
+}
