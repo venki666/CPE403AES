@@ -1,261 +1,156 @@
-//*****************************************************************************
-//
-// bitband.c - Bit-band manipulation example.
-//
-// Copyright (c) 2012-2017 Texas Instruments Incorporated.  All rights reserved.
-// Software License Agreement
-// 
-// Texas Instruments (TI) is supplying this software for use solely and
-// exclusively on TI's microcontroller products. The software is owned by
-// TI and/or its suppliers, and is protected under applicable copyright
-// laws. You may not combine this software with "viral" open-source
-// software in order to form a larger program.
-// 
-// THIS SOFTWARE IS PROVIDED "AS IS" AND WITH ALL FAULTS.
-// NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT
-// NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. TI SHALL NOT, UNDER ANY
-// CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
-// DAMAGES, FOR ANY REASON WHATSOEVER.
-// 
-// This is part of revision 2.1.4.178 of the EK-TM4C123GXL Firmware Package.
-//
-//*****************************************************************************
+// Lab12a - DMA
 
 #include <stdint.h>
 #include <stdbool.h>
+#include "inc/hw_ints.h"
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
-#include "driverlib/debug.h"
-#include "driverlib/gpio.h"
+#include "inc/hw_uart.h"
 #include "driverlib/fpu.h"
+#include "driverlib/gpio.h"
+#include "driverlib/interrupt.h"
 #include "driverlib/pin_map.h"
-#include "driverlib/sysctl.h"
-#include "driverlib/systick.h"
 #include "driverlib/rom.h"
-#include "driverlib/uart.h"
-#include "utils/uartstdio.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/udma.h"
 
-//*****************************************************************************
-//
-//! \addtogroup example_list
-//! <h1>Bit-Banding (bitband)</h1>
-//!
-//! This example application demonstrates the use of the bit-banding
-//! capabilities of the Cortex-M4F microprocessor.  All of SRAM and all of the
-//! peripherals reside within bit-band regions, meaning that bit-banding
-//! operations can be applied to any of them.  In this example, a variable in
-//! SRAM is set to a particular value one bit at a time using bit-banding
-//! operations (it would be more efficient to do a single non-bit-banded write;
-//! this simply demonstrates the operation of bit-banding).
-//
-//*****************************************************************************
+// Define source and destination buffers
+#define MEM_BUFFER_SIZE         1024
+static uint32_t g_ui32SrcBuf[MEM_BUFFER_SIZE];
+static uint32_t g_ui32DstBuf[MEM_BUFFER_SIZE];
 
+// Define errors counters
+static uint32_t g_ui32DMAErrCount = 0;
+static uint32_t g_ui32BadISR = 0;
 
-//*****************************************************************************
-//
-// The value that is to be modified via bit-banding.
-//
-//*****************************************************************************
-static volatile uint32_t g_ui32Value;
+// Define transfer counter
+static uint32_t g_ui32MemXferCount = 0;
 
-//*****************************************************************************
-//
-// The error routine that is called if the driver library encounters an error.
-//
-//*****************************************************************************
+// The control table used by the uDMA controller.  This table must be aligned to a 1024 byte boundary.
+#pragma DATA_ALIGN(pui8ControlTable, 1024)
+uint8_t pui8ControlTable[1024];
+
+// Library error routine
 #ifdef DEBUG
 void
 __error__(char *pcFilename, uint32_t ui32Line)
 {
-    while(1)
-    {
-        //
-        // Hang on runtime error.
-        //
-    }
 }
 #endif
 
-//*****************************************************************************
-//
-// Delay for the specified number of seconds.  Depending upon the current
-// SysTick value, the delay will be between N-1 and N seconds (i.e. N-1 full
-// seconds are guaranteed, along with the remainder of the current second).
-//
-//*****************************************************************************
+// uDMA transfer error handler
 void
-Delay(uint32_t ui32Seconds)
+uDMAErrorHandler(void)
 {
-    //
-    // Loop while there are more seconds to wait.
-    //
-    while(ui32Seconds--)
-    {
-        //
-        // Wait until the SysTick value is less than 1000.
-        //
-        while(ROM_SysTickValueGet() > 1000)
-        {
-        }
+    uint32_t ui32Status;
 
-        //
-        // Wait until the SysTick value is greater than 1000.
-        //
-        while(ROM_SysTickValueGet() < 1000)
-        {
-        }
+    // Check for uDMA error bit
+    ui32Status = ROM_uDMAErrorStatusGet();
+
+    // If there is a uDMA error, then clear the error and increment the error counter.
+    if(ui32Status)
+    {
+        ROM_uDMAErrorStatusClear();
+        g_ui32DMAErrCount++;
     }
 }
 
-//*****************************************************************************
-//
-// Configure the UART and its pins.  This must be called before UARTprintf().
-//
-//*****************************************************************************
+// uDMA interrupt handler. Run when transfer is complete.
 void
-ConfigureUART(void)
+uDMAIntHandler(void)
 {
-    //
-    // Enable the GPIO Peripheral used by the UART.
-    //
-    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
+    uint32_t ui32Mode;
 
-    //
-    // Enable UART0
-    //
-    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
+    // Check for the primary control structure to indicate complete.
+    ui32Mode = ROM_uDMAChannelModeGet(UDMA_CHANNEL_SW);
+    if(ui32Mode == UDMA_MODE_STOP)
+    {
+        // Increment the count of completed transfers.
+        g_ui32MemXferCount++;
 
-    //
-    // Configure GPIO Pins for UART mode.
-    //
-    ROM_GPIOPinConfigure(GPIO_PA0_U0RX);
-    ROM_GPIOPinConfigure(GPIO_PA1_U0TX);
-    ROM_GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
+        // Configure it for another transfer.
+        ROM_uDMAChannelTransferSet(UDMA_CHANNEL_SW, UDMA_MODE_AUTO,
+                                   g_ui32SrcBuf, g_ui32DstBuf, MEM_BUFFER_SIZE);
 
-    //
-    // Use the internal 16MHz oscillator as the UART clock source.
-    //
-    UARTClockSourceSet(UART0_BASE, UART_CLOCK_PIOSC);
+        // Initiate another transfer.
+        ROM_uDMAChannelEnable(UDMA_CHANNEL_SW);
+        ROM_uDMAChannelRequest(UDMA_CHANNEL_SW);
+    }
 
-    //
-    // Initialize the UART for console I/O.
-    //
-    UARTStdioConfig(0, 115200, 16000000);
+    // If the channel is not stopped, then something is wrong.
+    else
+    {
+        g_ui32BadISR++;
+    }
 }
 
-//*****************************************************************************
-//
-// This example demonstrates the use of bit-banding to set individual bits
-// within a word of SRAM.
-//
-//*****************************************************************************
+// Initialize the uDMA software channel to perform a memory to memory uDMA transfer.
+void
+InitSWTransfer(void)
+{
+    uint32_t ui32Idx;
+
+    // Fill the source memory buffer with a simple incrementing pattern.
+    for(ui32Idx = 0; ui32Idx < MEM_BUFFER_SIZE; ui32Idx++)
+    {
+        g_ui32SrcBuf[ui32Idx] = ui32Idx;
+    }
+
+    // Enable interrupts from the uDMA software channel.
+    ROM_IntEnable(INT_UDMA);
+
+    // Place the uDMA channel attributes in a known state. These should already be disabled by default.
+    ROM_uDMAChannelAttributeDisable(UDMA_CHANNEL_SW,
+                                    UDMA_ATTR_USEBURST | UDMA_ATTR_ALTSELECT |
+                                    (UDMA_ATTR_HIGH_PRIORITY |
+                                    UDMA_ATTR_REQMASK));
+
+    // Configure the control parameters for the SW channel.  The SW channel
+    // will be used to transfer between two memory buffers, 32 bits at a time,
+    // and the address increment is 32 bits for both source and destination.
+    // The arbitration size will be set to 8, which causes the uDMA controller
+    // to rearbitrate after 8 items are transferred.  This keeps this channel from
+    // hogging the uDMA controller once the transfer is started, and allows other
+    // channels to get serviced if they are higher priority.
+    ROM_uDMAChannelControlSet(UDMA_CHANNEL_SW | UDMA_PRI_SELECT,
+                              UDMA_SIZE_32 | UDMA_SRC_INC_32 | UDMA_DST_INC_32 |
+                              UDMA_ARB_8);
+
+    // Set up the transfer parameters for the software channel.  This will
+    // configure the transfer buffers and the transfer size.  Auto mode must be
+    // used for software transfers.
+    ROM_uDMAChannelTransferSet(UDMA_CHANNEL_SW | UDMA_PRI_SELECT,
+                               UDMA_MODE_AUTO, g_ui32SrcBuf, g_ui32DstBuf,
+                               MEM_BUFFER_SIZE);
+
+    // Now the software channel is primed to start a transfer.  The channel
+    // must be enabled.  For software based transfers, a request must be
+    // issued.  After this, the uDMA memory transfer begins.
+    ROM_uDMAChannelEnable(UDMA_CHANNEL_SW);
+    ROM_uDMAChannelRequest(UDMA_CHANNEL_SW);
+}
+
 int
 main(void)
 {
-    uint32_t ui32Errors, ui32Idx;
 
-    //
-    // Enable lazy stacking for interrupt handlers.  This allows floating-point
-    // instructions to be used within interrupt handlers, but at the expense of
-    // extra stack usage.
-    //
     ROM_FPULazyStackingEnable();
 
-    //
-    // Set the clocking to run directly from the crystal.
-    //
-    ROM_SysCtlClockSet(SYSCTL_SYSDIV_1 | SYSCTL_USE_OSC | SYSCTL_OSC_MAIN |
+    ROM_SysCtlClockSet(SYSCTL_SYSDIV_4 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN |
                        SYSCTL_XTAL_16MHZ);
 
-    //
-    // Initialize the UART interface.
-    //
-    ConfigureUART();
+    ROM_SysCtlPeripheralClockGating(true);
 
-    UARTprintf("\033[2JBit banding...\n");
+    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_UDMA);
+    ROM_SysCtlPeripheralSleepEnable(SYSCTL_PERIPH_UDMA);
 
-    //
-    // Set up and enable the SysTick timer.  It will be used as a reference
-    // for delay loops.  The SysTick timer period will be set up for one
-    // second.
-    //
-    ROM_SysTickPeriodSet(ROM_SysCtlClockGet());
-    ROM_SysTickEnable();
+    ROM_IntEnable(INT_UDMAERR);
+    ROM_uDMAEnable();
 
-    //
-    // Set the value and error count to zero.
-    //
-    g_ui32Value = 0;
-    ui32Errors = 0;
+    ROM_uDMAControlBaseSet(pui8ControlTable);
 
-    //
-    // Print the initial value to the UART.
-    //
-    UARTprintf("\r%08x", g_ui32Value);
+    InitSWTransfer();
 
-    //
-    // Delay for 1 second.
-    //
-    Delay(1);
-
-    //
-    // Set the value to 0xdecafbad using bit band accesses to each individual
-    // bit.
-    //
-    for(ui32Idx = 0; ui32Idx < 32; ui32Idx++)
-    {
-        //
-        // Set this bit.
-        //
-        HWREGBITW(&g_ui32Value, 31 - ui32Idx) = (0xdecafbad >>
-                                                 (31 - ui32Idx)) & 1;
-
-        //
-        // Print the current value to the UART.
-        //
-        UARTprintf("\r%08x", g_ui32Value);
-
-        //
-        // Delay for 1 second.
-        //
-        Delay(1);
-    }
-
-    //
-    // Make sure that the value is 0xdecafbad.
-    //
-    if(g_ui32Value != 0xdecafbad)
-    {
-        ui32Errors++;
-    }
-
-    //
-    // Make sure that the individual bits read back correctly.
-    //
-    for(ui32Idx = 0; ui32Idx < 32; ui32Idx++)
-    {
-        if(HWREGBITW(&g_ui32Value, ui32Idx) != ((0xdecafbad >> ui32Idx) & 1))
-        {
-            ui32Errors++;
-        }
-    }
-
-    //
-    // Print out the result.
-    //
-    if(ui32Errors)
-    {
-        UARTprintf("\nErrors!\n");
-    }
-    else
-    {
-        UARTprintf("\nSuccess!\n");
-    }
-
-    //
-    // Loop forever.
-    //
     while(1)
     {
     }
