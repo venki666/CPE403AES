@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cHelpSettings>
+<project name="CMSIS_ARMC4F_DSPLIB_Benchmark">
+<provider id="ProductHelpProvider">
+<book enabled="true" title="CCS Product Content"/>
+</provider>
+<provider id="org.eclipse.cdt.ui.provider1"/>
+<provider id="RTSCHelpProvider">
+<book enabled="true" title="RTSC Content"/>
+</provider>
+</project>
+</cHelpSettings>

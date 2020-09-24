@@ -1,0 +1,12 @@
+
+**** Clean-only build of configuration Debug for project Class_Blinky_TM4C123 ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k clean 
+ 
+rm -rf  "Class_Blinky_TM4C123.bin"  "Class_Blinky_TM4C123.out" 
+rm -rf "Class_Blink.obj" "startup_ccs.obj" 
+rm -rf "Class_Blink.d" "startup_ccs.d" 
+Finished clean
+ 
+
+**** Build Finished ****

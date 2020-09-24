@@ -1,0 +1,598 @@
+
+**** Build of configuration Debug for project NN-cm4f ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k -j 7 all -O 
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ActivationFunctions/arm_relu6_s8.d_raw" --obj_directory="Source/ActivationFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ActivationFunctions/arm_relu_q15.d_raw" --obj_directory="Source/ActivationFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ActivationFunctions/arm_nn_activations_q7.d_raw" --obj_directory="Source/ActivationFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c"
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ActivationFunctions/arm_relu_q7.d_raw" --obj_directory="Source/ActivationFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ActivationFunctions/arm_nn_activations_q15.d_raw" --obj_directory="Source/ActivationFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c", line 77: warning #225-D: function "__USAT" declared implicitly
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConcatenationFunctions/arm_concatenation_s8_w.d_raw" --obj_directory="Source/ConcatenationFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConcatenationFunctions/arm_concatenation_s8_y.d_raw" --obj_directory="Source/ConcatenationFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConcatenationFunctions/arm_concatenation_s8_z.d_raw" --obj_directory="Source/ConcatenationFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConcatenationFunctions/arm_concatenation_s8_x.d_raw" --obj_directory="Source/ConcatenationFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/BasicMathFunctions/arm_elementwise_mul_s8.d_raw" --obj_directory="Source/BasicMathFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/BasicMathFunctions/arm_elementwise_add_s8.d_raw" --obj_directory="Source/BasicMathFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c"
+ 
+>> Compilation failure
+Source/ConvolutionFunctions/subdir_rules.mk:91: recipe for target 'Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 92: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 92: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 92: error #20: identifier "out_h" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 92: error #20: identifier "in_h" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 94: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 94: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 94: error #20: identifier "out_w" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 94: error #20: identifier "in_w" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 106: error #20: identifier "ker_h_start" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 109: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 109: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 109: error #20: identifier "ker_h" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 163: error #20: identifier "out_idx" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 174: error #20: identifier "ker_h_start" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 177: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 177: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 177: error #20: identifier "ker_h" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c", line 198: error #20: identifier "out_idx" is undefined
+18 errors detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c".
+gmake: *** [Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_depthwise_conv_s8.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c"
+ 
+>> Compilation failure
+Source/ConvolutionFunctions/subdir_rules.mk:98: recipe for target 'Source/ConvolutionFunctions/arm_depthwise_conv_s8.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 67: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 67: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 67: error #20: identifier "out_h" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 67: error #20: identifier "in_h" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 69: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 69: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 69: error #20: identifier "out_w" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 69: error #20: identifier "in_w" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 71: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 71: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 71: error #20: identifier "out_ch" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 71: error #20: identifier "in_ch" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 73: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 73: error #20: identifier "mult_tile" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 82: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 82: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 82: error #20: identifier "ker_h" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 84: error #20: identifier "ker_w_start" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 87: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 87: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 87: error #20: identifier "ker_w" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 122: error #20: identifier "out_idx" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 160: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 160: error #20: identifier "i_out_y" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 163: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 163: error #20: identifier "i_out_x" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 166: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 166: error #20: identifier "i_input_ch" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 168: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 168: error #20: identifier "i_ch_mult" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 180: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 180: error #20: identifier "i_ker_y" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 183: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c", line 183: error #20: identifier "i_ker_x" is undefined
+34 errors detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c".
+gmake: *** [Source/ConvolutionFunctions/arm_depthwise_conv_s8.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c"
+ 
+>> Compilation failure
+Source/ConvolutionFunctions/subdir_rules.mk:105: recipe for target 'Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c", line 215: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c", line 215: error #20: identifier "i_out_y" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c", line 218: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c", line 218: error #20: identifier "i_out_x" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c", line 235: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c", line 235: error #20: identifier "i_ker_y" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c", line 239: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c", line 239: error #20: identifier "i_ker_x" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c", line 368: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c", line 368: error #20: identifier "i" is undefined
+10 errors detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c".
+gmake: *** [Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c"
+ 
+>> Compilation failure
+Source/ConvolutionFunctions/subdir_rules.mk:112: recipe for target 'Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 130: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 130: error #20: identifier "i_out_y" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 133: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 133: error #20: identifier "i_out_x" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 136: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 136: error #20: identifier "i_input_ch" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 138: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 138: error #20: identifier "i_ch_mult" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 150: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 150: error #20: identifier "i_ker_y" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 155: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c", line 155: error #20: identifier "i_ker_x" is undefined
+12 errors detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c".
+gmake: *** [Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_s8.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c"
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_nn_mat_mult_s8.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.d_raw" --obj_directory="Source/FullyConnectedFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.d_raw" --obj_directory="Source/FullyConnectedFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/FullyConnectedFunctions/arm_fully_connected_q15.d_raw" --obj_directory="Source/FullyConnectedFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.d_raw" --obj_directory="Source/FullyConnectedFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_nn_add_q7.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c"
+ 
+>> Compilation failure
+Source/NNSupportFunctions/subdir_rules.mk:14: recipe for target 'Source/NNSupportFunctions/arm_nn_add_q7.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c", line 54: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c", line 81: warning #1-D: last line of file ends without a newline
+1 error detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c".
+gmake: *** [Source/NNSupportFunctions/arm_nn_add_q7.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/FullyConnectedFunctions/arm_fully_connected_q7.d_raw" --obj_directory="Source/FullyConnectedFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.d_raw" --obj_directory="Source/ConvolutionFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c"
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/FullyConnectedFunctions/arm_fully_connected_s8.d_raw" --obj_directory="Source/FullyConnectedFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c", line 85: warning #1-D: last line of file ends without a newline
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c"
+ 
+>> Compilation failure
+Source/NNSupportFunctions/subdir_rules.mk:42: recipe for target 'Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c", line 96: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c", line 96: error #20: identifier "i" is undefined
+2 errors detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c".
+gmake: *** [Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.obj] Error 1
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c", line 77: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c", line 77: error #20: identifier "i" is undefined
+2 errors detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c".
+gmake: *** [Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c"
+ 
+>> Compilation failure
+Source/NNSupportFunctions/subdir_rules.mk:35: recipe for target 'Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.obj' failed
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c"
+ 
+>> Compilation failure
+Source/NNSupportFunctions/subdir_rules.mk:49: recipe for target 'Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 67: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 67: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 67: error #20: identifier "rhs_rows_idx" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 75: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 75: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 75: error #20: identifier "x" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 109: warning #225-D: function "__SXTB16_RORn" declared implicitly
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 275: warning #225-D: function "__SXTB16_RORn" declared implicitly
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 375: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 375: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 375: error #20: identifier "lhs_rows_idx" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 380: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 380: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c", line 380: error #20: identifier "rhs_cols_idx" is undefined
+12 errors detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c".
+gmake: *** [Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c"
+ 
+>> Compilation failure
+Source/NNSupportFunctions/subdir_rules.mk:70: recipe for target 'Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 72: error #256: type name is not allowed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 72: error #66: expected a ";"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 72: error #20: identifier "rhs_rows_idx" is undefined
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 87: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 90: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 91: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 94: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 98: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 100: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 106: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 109: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 110: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 113: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 117: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 119: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 125: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 128: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 129: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 132: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 136: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 138: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 144: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 147: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 148: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 151: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 155: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 157: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 208: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 210: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 211: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 212: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 219: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 221: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 222: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 223: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 230: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 232: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 233: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 234: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 241: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 243: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 244: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 245: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c", line 356: warning #1-D: last line of file ends without a newline
+43 errors detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c".
+gmake: *** [Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.d_raw" --obj_directory="Source/FullyConnectedFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c"
+ 
+>> Compilation failure
+Source/NNSupportFunctions/subdir_rules.mk:98: recipe for target 'Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c", line 71: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c", line 72: error #167: too few arguments in function call
+2 errors detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c".
+gmake: *** [Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_q7_to_q15_with_offset.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c"
+ 
+>> Compilation failure
+Source/NNSupportFunctions/subdir_rules.mk:105: recipe for target 'Source/NNSupportFunctions/arm_q7_to_q15_with_offset.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c", line 86: error #167: too few arguments in function call
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c", line 87: error #167: too few arguments in function call
+2 errors detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c".
+gmake: *** [Source/NNSupportFunctions/arm_q7_to_q15_with_offset.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_nn_mult_q15.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_nntables.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_nn_mult_q7.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c"
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_q7_to_q15_no_shift.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.d_raw" --obj_directory="Source/NNSupportFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/PoolingFunctions/arm_avgpool_s8.d_raw" --obj_directory="Source/PoolingFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/ReshapeFunctions/arm_reshape_s8.d_raw" --obj_directory="Source/ReshapeFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c", line 58: warning #1-D: last line of file ends without a newline
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/PoolingFunctions/arm_max_pool_s8.d_raw" --obj_directory="Source/PoolingFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/SoftmaxFunctions/arm_softmax_with_batch_q7.d_raw" --obj_directory="Source/SoftmaxFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c"
+ 
+>> Compilation failure
+Source/SoftmaxFunctions/subdir_rules.mk:35: recipe for target 'Source/SoftmaxFunctions/arm_softmax_with_batch_q7.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c", line 65: error #29: expected an expression
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c", line 65: error #20: identifier "i" is undefined
+2 errors detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c".
+gmake: *** [Source/SoftmaxFunctions/arm_softmax_with_batch_q7.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/SoftmaxFunctions/arm_softmax_q15.d_raw" --obj_directory="Source/SoftmaxFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c", line 89: warning #225-D: function "__USAT" declared implicitly
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c", line 107: warning #225-D: function "__USAT" declared implicitly
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/SoftmaxFunctions/arm_softmax_q7.d_raw" --obj_directory="Source/SoftmaxFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c", line 158: warning #225-D: function "__USAT" declared implicitly
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c", line 209: warning #225-D: function "__USAT" declared implicitly
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8_opt.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/PoolingFunctions/arm_max_pool_s8_opt.d_raw" --obj_directory="Source/PoolingFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8_opt.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8_opt.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/PoolingFunctions/arm_pool_q7_HWC.d_raw" --obj_directory="Source/PoolingFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/SoftmaxFunctions/arm_softmax_s8.d_raw" --obj_directory="Source/SoftmaxFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c"
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/NN-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/DSP/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Source/SoftmaxFunctions/arm_softmax_u8.d_raw" --obj_directory="Source/SoftmaxFunctions"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c"
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include/cmsis_compiler.h", line 127: warning #1181-D: #warning directive: No compiler specific solution for __COMPILER_BARRIER. __COMPILER_BARRIER is ignored.
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c", line 101: warning #1-D: last line of file ends without a newline
+Finished building: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

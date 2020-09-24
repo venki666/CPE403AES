@@ -1,0 +1,25 @@
+
+**** Build of configuration Debug for project Lab1_Class ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k -j 7 all -O 
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/Users/venkim/workspace_v10/Lab1_Class" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/tivaware_c_series_2_1_4_178" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../Lab1_Class.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/Users/venkim/workspace_v10/Lab1_Class" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/tivaware_c_series_2_1_4_178" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Lab1_Class.d_raw"  "../Lab1_Class.c"
+Finished building: "../Lab1_Class.c"
+ 
+Building target: "Lab1_Class.out"
+Invoking: ARM Linker
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab1_Class.map" --heap_size=0 --stack_size=512 -i"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -i"/Users/venkim/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab1_Class_linkInfo.xml" --rom_model -o "Lab1_Class.out" "./Lab1_Class.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -ldriverlib.lib 
+<Linking>
+Finished building target: "Lab1_Class.out"
+ 
+"/Applications/ti/ccs1010/ccs/utils/tiobj2bin/tiobj2bin" "Lab1_Class.out" "Lab1_Class.bin" "/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armofd" "/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armhex" "/Applications/ti/ccs1010/ccs/utils/tiobj2bin/mkhex4bin"
+ 
+
+**** Build Finished ****

@@ -1,0 +1,12 @@
+
+**** Build of configuration Debug for project tirtos_builds_CC1352R1_LAUNCHXL_release_ccs ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k -j 7 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****

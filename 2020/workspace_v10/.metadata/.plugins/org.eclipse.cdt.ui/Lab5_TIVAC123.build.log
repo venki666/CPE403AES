@@ -1,0 +1,12 @@
+
+**** Clean-only build of configuration Debug for project Lab5_TIVAC123 ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k clean 
+ 
+rm -rf  "Lab15_TIVAC123.bin"  "Lab15_TIVAC123.out" 
+rm -rf "Lab15.obj" "startup_ccs.obj" 
+rm -rf "Lab15.d" "startup_ccs.d" 
+Finished clean
+ 
+
+**** Build Finished ****

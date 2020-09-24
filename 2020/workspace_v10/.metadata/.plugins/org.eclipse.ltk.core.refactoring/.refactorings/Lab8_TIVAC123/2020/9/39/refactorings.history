@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Lab8_TIVAC123/Lab7c.c&apos; to &apos;Lab8.c&apos;" description="Rename resource &apos;Lab7c.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Lab7c.c" name="Lab8.c" stamp="1600926616369" updateReferences="true"/>
+</session>

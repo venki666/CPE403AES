@@ -1,0 +1,52 @@
+
+**** Build of configuration Debug for project mutex_EK_TM4C123GXL_TI ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k -j 7 all -O 
+ 
+Building file: "../mutex.cfg"
+Invoking: XDCtools
+"/Users/venkim/ti/xdctools_3_32_01_22_core/xs" --xdcpath="/Users/venkim/ti/tirtos_tivac_2_16_00_08/packages;/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/tidrivers_tivac_2_16_00_08/packages;/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages;/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/ndk_2_25_00_09/packages;/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/uia_2_00_05_50/packages;/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/ns_1_11_00_10/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.tiva:TM4C123GH6PM -r release -c "/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path=\"/Users/venkim/workspace_v10/mutex_EK_TM4C123GXL_TI\" --include_path=\"/Users/venkim/workspace_v10/mutex_EK_TM4C123GXL_TI\" --include_path=\"/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/TivaWare_C_Series-2.1.1.71b\" --include_path=\"/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/posix\" --include_path=\"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include\" --define=ccs=\"ccs\" --define=PART_TM4C123GH6PM --define=ccs --define=TIVAWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi  " "../mutex.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring mutex.xem4f from package/cfg/mutex_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making /Users/venkim/workspace_v10/mutex_EK_TM4C123GXL_TI/src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory `/Users/venkim/workspace_v10/mutex_EK_TM4C123GXL_TI/src/sysbios'
+clem4f /Users/venkim/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.c ...
+asmem4f /Users/venkim/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem4f /Users/venkim/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem4f /Users/venkim/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem4f /Users/venkim/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `/Users/venkim/workspace_v10/mutex_EK_TM4C123GXL_TI/src/sysbios'
+Build of libraries done.
+clem4f package/cfg/mutex_pem4f.c ...
+"package/cfg/mutex_pem4f.c", line 15107: warning #112-D: statement is unreachable
+"package/cfg/mutex_pem4f.c", line 15593: warning #112-D: statement is unreachable
+"package/cfg/mutex_pem4f.c", line 15867: warning #112-D: statement is unreachable
+"package/cfg/mutex_pem4f.c", line 16048: warning #112-D: statement is unreachable
+Finished building: "../mutex.cfg"
+ 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../mutex.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/Users/venkim/workspace_v10/mutex_EK_TM4C123GXL_TI" --include_path="/Users/venkim/workspace_v10/mutex_EK_TM4C123GXL_TI" --include_path="/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/TivaWare_C_Series-2.1.1.71b" --include_path="/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/posix" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ccs --define=TIVAWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="mutex.d_raw" --cmd_file="configPkg/compiler.opt"  "../mutex.c"
+Finished building: "../mutex.c"
+ 
+Building file: "../EK_TM4C123GXL.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/Users/venkim/workspace_v10/mutex_EK_TM4C123GXL_TI" --include_path="/Users/venkim/workspace_v10/mutex_EK_TM4C123GXL_TI" --include_path="/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/TivaWare_C_Series-2.1.1.71b" --include_path="/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/posix" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ccs --define=TIVAWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="EK_TM4C123GXL.d_raw" --cmd_file="configPkg/compiler.opt"  "../EK_TM4C123GXL.c"
+Finished building: "../EK_TM4C123GXL.c"
+ 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "mutex_EK_TM4C123GXL_TI.out"
+Invoking: ARM Linker
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ccs --define=TIVAWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"mutex_EK_TM4C123GXL_TI.map" --heap_size=0 --stack_size=512 -i"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="mutex_EK_TM4C123GXL_TI_linkInfo.xml" --rom_model -o "mutex_EK_TM4C123GXL_TI.out" "./EK_TM4C123GXL.obj" "./mutex.obj" "../EK_TM4C123GXL.cmd" -l"configPkg/linker.cmd"  -l"/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/TivaWare_C_Series-2.1.1.71b/grlib/ccs/Debug/grlib.lib" -l"/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/TivaWare_C_Series-2.1.1.71b/usblib/ccs/Debug/usblib.lib" -l"/Users/venkim/ti/tirtos_tivac_2_16_00_08/products/TivaWare_C_Series-2.1.1.71b/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "mutex_EK_TM4C123GXL_TI.out"
+ 
+
+**** Build Finished ****

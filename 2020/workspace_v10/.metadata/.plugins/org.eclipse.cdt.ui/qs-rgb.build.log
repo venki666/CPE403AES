@@ -1,0 +1,12 @@
+
+**** Clean-only build of configuration Debug for project qs-rgb ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k clean 
+ 
+rm -rf  "qs-rgb.bin"  "qs-rgb.out" 
+rm -rf "qs-rgb.obj" "rgb_commands.obj" "startup_ccs.obj" "drivers/buttons.obj" "drivers/rgb.obj" "utils/cmdline.obj" "utils/uartstdio.obj" "utils/ustdlib.obj" 
+rm -rf "qs-rgb.d" "rgb_commands.d" "startup_ccs.d" "drivers/buttons.d" "drivers/rgb.d" "utils/cmdline.d" "utils/uartstdio.d" "utils/ustdlib.d" 
+Finished clean
+ 
+
+**** Build Finished ****

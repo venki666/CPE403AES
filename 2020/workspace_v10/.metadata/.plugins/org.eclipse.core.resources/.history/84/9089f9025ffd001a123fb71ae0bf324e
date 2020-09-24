@@ -1,0 +1,33 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../temperature_tmp006_ccs.cmd 
+
+C_SRCS += \
+../startup_ccs.c \
+../temperature_tmp006.c 
+
+C_DEPS += \
+./startup_ccs.d \
+./temperature_tmp006.d 
+
+OBJS += \
+./startup_ccs.obj \
+./temperature_tmp006.obj 
+
+OBJS__QUOTED += \
+"startup_ccs.obj" \
+"temperature_tmp006.obj" 
+
+C_DEPS__QUOTED += \
+"startup_ccs.d" \
+"temperature_tmp006.d" 
+
+C_SRCS__QUOTED += \
+"../startup_ccs.c" \
+"../temperature_tmp006.c" 
+
+

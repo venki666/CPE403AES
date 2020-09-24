@@ -1,0 +1,12 @@
+
+**** Clean-only build of configuration Debug for project Lab0 ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k -j 7 clean -O 
+ 
+rm -rf  "Lab0.bin"  "Lab0.out" 
+rm -rf "Lab0.obj" "tm4c123gh6pm_startup_ccs.obj" 
+rm -rf "Lab0.d" "tm4c123gh6pm_startup_ccs.d" 
+Finished clean
+ 
+
+**** Build Finished ****

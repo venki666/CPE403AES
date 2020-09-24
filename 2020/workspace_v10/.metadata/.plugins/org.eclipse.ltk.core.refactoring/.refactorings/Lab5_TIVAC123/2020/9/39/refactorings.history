@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Lab4_TIVAC123/Lab15.c&apos; to &apos;Lab4.c&apos;" description="Rename resource &apos;Lab15.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Lab15.c" name="Lab4.c" stamp="1600836054071" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Lab5_TIVAC123/Lab4.c&apos; to &apos;Lab5.c&apos;" description="Rename resource &apos;Lab4.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Lab4.c" name="Lab5.c" stamp="1600836292539" updateReferences="true"/>
+</session>

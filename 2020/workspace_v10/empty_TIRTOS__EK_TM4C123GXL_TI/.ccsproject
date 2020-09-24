@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVersion value="10.1.0"/>
+	<deviceVariant value="Cortex M.TM4C123GH6PM"/>
+	<deviceFamily value="TMS470"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="20.2.2.LTS"/>
+	<isElfFormat value="true"/>
+	<rts value="libc.a"/>
+	<createSlaveProjects value=""/>
+	<templateProperties value="id=com_ti_rtsc_tirtostivac_example_78.projectspec.empty_EK_TM4C123GXL_TI,type=rtsc,products=com.ti.rtsc.TIRTOStivac,xdcToolsVersion=3_32_00_06_core,target=ti.targets.arm.elf.M4F,platform=ti.platforms.tiva:TM4C123GH6PM,buildProfile=release,isHybrid=true,configuroOptions= --compileOptions &quot;${COMPILER_FLAGS} &quot;"/>
+	<origin value="/Users/venkim/ti/tirtos_tivac_2_16_00_08/resources/ek_tm4C123GXLEvaluationKit/driverExamples/tiDriverExamples/emptyExamples/com_ti_rtsc_tirtostivac_example_78.projectspec"/>
+	<filesToOpen value=""/>
+	<isTargetManual value="true"/>
+</projectOptions>

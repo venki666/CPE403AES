@@ -1,0 +1,1 @@
+"./fft_float.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd" -l"/Users/venkim/workspace_v10/dsplib-cm4f/Debug/dsplib-cm4f.lib" -llibc.a 

@@ -1,0 +1,12 @@
+
+**** Clean-only build of configuration Debug for project CMSIS_ARMC4F_DSPLIB_MatrixExample ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k -j 7 clean -O 
+ 
+rm -rf  "CMSIS_ARMC4F_DSPLIB_MatrixExample.hex"  "CMSIS_ARMC4F_DSPLIB_MatrixExample.out" 
+rm -rf "arm_matrix_example_f32.obj" "math_helper.obj" "tm4c123gh6pm_startup_ccs.obj" 
+rm -rf "arm_matrix_example_f32.d" "math_helper.d" "tm4c123gh6pm_startup_ccs.d" 
+Finished clean
+ 
+
+**** Build Finished ****

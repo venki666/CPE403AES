@@ -1,0 +1,11 @@
+
+**** Build of configuration Debug for project empty_TIRTOS__EK_TM4C123GXL_TI ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k -j 7 all -O 
+ 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****

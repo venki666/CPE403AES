@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVersion value="10.1.0"/>
+	<deviceVariant value="Cortex M.CC1352R1F3"/>
+	<deviceFamily value="TMS470"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="20.2.1.LTS"/>
+	<isElfFormat value="true"/>
+	<createSlaveProjects value=""/>
+	<ignoreDefaultDeviceSettings value="true"/>
+	<ignoreDefaultCCSSettings value="true"/>
+	<templateProperties value="id=tirtos_builds_CC1352R1_LAUNCHXL_release_ccs.projectspec.tirtos_builds_CC1352R1_LAUNCHXL_release_ccs,products=com.ti.SIMPLELINK_CC13X2_26X2_SDK,xdcToolsVersion=3.61.999,target=ti.targets.arm.elf.M4F,platform=ti.platforms.simplelink:CC1352,buildProfile=release,configuroOptions= --compileOptions &quot; -DDeviceFamily_CC13X2 &quot;"/>
+	<origin value="/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/kernel/tirtos/builds/CC1352R1_LAUNCHXL/release/ccs/tirtos_builds_CC1352R1_LAUNCHXL_release_ccs.projectspec"/>
+	<filesToOpen value=""/>
+</projectOptions>

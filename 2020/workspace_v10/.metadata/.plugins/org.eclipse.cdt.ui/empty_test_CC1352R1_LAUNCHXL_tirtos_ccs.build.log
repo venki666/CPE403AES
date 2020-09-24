@@ -1,0 +1,52 @@
+
+**** Build of configuration Debug for project empty_test_CC1352R1_LAUNCHXL_tirtos_ccs ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k -j 7 all -O 
+ 
+Building file: "../empty.syscfg"
+Invoking: SysConfig
+"/Applications/ti/ccs1010/ccs/utils/sysconfig_1.5.0/sysconfig_cli.sh" -s "/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/.metadata/product.json" -o "syscfg" --compiler ccs "../empty.syscfg"
+Running script...
+Validating...
+Generating Code...
+    '/ti/drivers' -> '/ti/devices/driverlib'
+Writing /Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug/syscfg/ti_devices_config.c...
+Writing /Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug/syscfg/ti_drivers_config.c...
+Writing /Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug/syscfg/ti_drivers_config.h...
+Writing /Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug/syscfg/ti_utils_build_linker.cmd.exp...
+Writing /Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug/syscfg/syscfg_c.rov.xs...
+Finished building: "../empty.syscfg"
+ 
+Building file: "syscfg/ti_devices_config.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs" --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug" --include_path="/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/source" --include_path="/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/source/ti/posix/ccs" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=DeviceFamily_CC13X2 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_devices_config.d_raw" --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug/syscfg" --obj_directory="syscfg" --cmd_file="/Users/venkim/workspace_v10/tirtos_builds_CC1352R1_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt"  "syscfg/ti_devices_config.c"
+Finished building: "syscfg/ti_devices_config.c"
+ 
+Building file: "../empty.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs" --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug" --include_path="/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/source" --include_path="/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/source/ti/posix/ccs" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=DeviceFamily_CC13X2 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.d_raw" --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug/syscfg" --cmd_file="/Users/venkim/workspace_v10/tirtos_builds_CC1352R1_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt"  "../empty.c"
+Finished building: "../empty.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs" --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug" --include_path="/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/source" --include_path="/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/source/ti/posix/ccs" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=DeviceFamily_CC13X2 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug/syscfg" --obj_directory="syscfg" --cmd_file="/Users/venkim/workspace_v10/tirtos_builds_CC1352R1_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building file: "../CC1352R1_LAUNCHXL_fxns.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs" --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug" --include_path="/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/source" --include_path="/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/source/ti/posix/ccs" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=DeviceFamily_CC13X2 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="CC1352R1_LAUNCHXL_fxns.d_raw" --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug/syscfg" --cmd_file="/Users/venkim/workspace_v10/tirtos_builds_CC1352R1_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt"  "../CC1352R1_LAUNCHXL_fxns.c"
+Finished building: "../CC1352R1_LAUNCHXL_fxns.c"
+ 
+Building file: "../main_tirtos.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs" --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug" --include_path="/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/source" --include_path="/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/source/ti/posix/ccs" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=DeviceFamily_CC13X2 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_tirtos.d_raw" --include_path="/Users/venkim/workspace_v10/empty_test_CC1352R1_LAUNCHXL_tirtos_ccs/Debug/syscfg" --cmd_file="/Users/venkim/workspace_v10/tirtos_builds_CC1352R1_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt"  "../main_tirtos.c"
+Finished building: "../main_tirtos.c"
+ 
+Building target: "empty_test_CC1352R1_LAUNCHXL_tirtos_ccs.out"
+Invoking: ARM Linker
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=DeviceFamily_CC13X2 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"empty_test_CC1352R1_LAUNCHXL_tirtos_ccs.map" -i"/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/source" -i"/Users/venkim/ti/simplelink_cc13x2_26x2_sdk_4_20_00_35/kernel/tirtos/packages" -i"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_test_CC1352R1_LAUNCHXL_tirtos_ccs_linkInfo.xml" --rom_model -o "empty_test_CC1352R1_LAUNCHXL_tirtos_ccs.out" "./CC1352R1_LAUNCHXL_fxns.obj" "./empty.obj" "./syscfg/ti_devices_config.obj" "./syscfg/ti_drivers_config.obj" "./main_tirtos.obj" "../CC1352R1_LAUNCHXL_TIRTOS.cmd" -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs_cc26xx.a" -l"ti/drivers/lib/drivers_cc13x2.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"ti/dpl/lib/dpl_cc13x2.aem4f" -l"/Users/venkim/workspace_v10/tirtos_builds_CC1352R1_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd"  -l"ti/devices/cc13x2_cc26x2/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_test_CC1352R1_LAUNCHXL_tirtos_ccs.out"
+ 
+
+**** Build Finished ****

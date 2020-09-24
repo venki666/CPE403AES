@@ -1,0 +1,442 @@
+******************************************************************************
+                  TI ARM Linker Unix v20.2.1                   
+******************************************************************************
+>> Linked Wed Sep 23 12:02:20 2020
+
+OUTPUT FILE NAME:   <qs-rgb.out>
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 000017d1
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00040000  00001c9c  0003e364  R  X
+  SRAM                  20000000   00008000  00000dec  00007214  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00001ca0   00001ca0    r-x
+  00000000    00000000    0000026c   0000026c    r-- .intvecs
+  0000026c    0000026c    00001834   00001834    r-x .text
+  00001aa0    00001aa0    0000016c   0000016c    r-- .const
+  00001c10    00001c10    00000090   00000090    r-- .cinit
+20000000    20000000    00000dec   00000000    rw-
+  20000000    20000000    00000800   00000000    rw- .stack
+  20000800    20000800    0000056c   00000000    rw- .bss
+  20000d6c    20000d6c    00000080   00000000    rw- .data
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    0000026c     
+                  00000000    0000026c     startup_ccs.obj (.intvecs)
+
+.text      0    0000026c    00001834     
+                  0000026c    00000278     qs-rgb.obj (.text:main)
+                  000004e4    000001ee     uartstdio.obj (.text:UARTvprintf)
+                  000006d2    00000002     startup_ccs.obj (.text:FaultISR)
+                  000006d4    00000160     uartstdio.obj (.text:UARTStdioIntHandler)
+                  00000834    00000110     driverlib.lib : sysctl.obj (.text:SysCtlClockGet)
+                  00000944    00000104     rgb.obj (.text:RGBInit)
+                  00000a48    000000e0     qs-rgb.obj (.text:AppRainbow)
+                  00000b28    000000d4     qs-rgb.obj (.text:AppButtonHandler)
+                  00000bfc    000000c0     rgb.obj (.text:RGBEnable)
+                  00000cbc    000000b0     uartstdio.obj (.text:UARTStdioConfig)
+                  00000d6c    000000a8     uartstdio.obj (.text:UARTwrite)
+                  00000e14    000000a4     rtsv7M4_T_le_v4SPD16_eabi.lib : s_sinf.c.obj (.text:sinf)
+                  00000eb8    0000009c                                   : memcpy_t2.asm.obj (.text)
+                  00000f54    0000009c     ustdlib.obj (.text:ustrtoul)
+                  00000ff0    00000090     rgb.obj (.text:RGBColorSet)
+                  00001080    0000008c     uartstdio.obj (.text:UARTPrimeTransmit)
+                  0000110c    00000088     buttons.obj (.text:ButtonsPoll)
+                  00001194    0000007a     rtsv7M4_T_le_v4SPD16_eabi.lib : memset_t2.asm.obj (.text)
+                  0000120e    00000002     startup_ccs.obj (.text:IntDefaultHandler)
+                  00001210    00000078     qs-rgb.obj (.text:AppHibernateEnter)
+                  00001288    00000078     qs-rgb.obj (.text:SysTickIntHandler)
+                  00001300    00000068     buttons.obj (.text:ButtonsInit)
+                  00001368    00000068     rgb_commands.obj (.text:CMD_help)
+                  000013d0    00000068     rgb.obj (.text:RGBDisable)
+                  00001438    00000068     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
+                  000014a0    00000064     cmdline.obj (.text:CmdLineProcess)
+                  00001504    00000064     qs-rgb.obj (.text:ConfigureUART)
+                  00001568    00000064     driverlib.lib : hibernate.obj (.text:HibernateWakeSet)
+                  000015cc    00000054     uartstdio.obj (.text:UARTgets)
+                  00001620    00000044     uartstdio.obj (.text:UARTPeek)
+                  00001664    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit:__TI_auto_init_nobinit_nopinit)
+                  000016a8    00000040                                   : u_divt2.asm.obj (.text)
+                  000016e8    0000003c     rgb_commands.obj (.text:CMD_intensity)
+                  00001724    0000003c     rgb_commands.obj (.text:CMD_rgb)
+                  00001760    0000003c     uartstdio.obj (.text:UARTFlushTx)
+                  0000179c    00000034     driverlib.lib : sysctl.obj (.text:SysCtlPeripheralEnable)
+                  000017d0    00000034     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.text:_c_int00_noargs:_c_int00_noargs)
+                  00001804    0000002c     driverlib.lib : hibernate.obj (.text:HibernateRTCSet)
+                  00001830    0000002c     uartstdio.obj (.text:UARTFlushRx)
+                  0000185c    00000028     driverlib.lib : hibernate.obj (.text:HibernateDataSet)
+                  00001884    00000024                   : hibernate.obj (.text:HibernateDataGet)
+                  000018a8    0000001a     uartstdio.obj (.text:UARTprintf)
+                  000018c2    00000002     startup_ccs.obj (.text:NmiSR)
+                  000018c4    00000018     driverlib.lib : hibernate.obj (.text:HibernateGPIORetentionEnable)
+                  000018dc    00000018                   : hibernate.obj (.text:HibernateIntStatus)
+                  000018f4    00000018     uartstdio.obj (.text:IsBufferFull)
+                  0000190c    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : strcmp.c.obj (.text:strcmp)
+                  00001924    00000014     rgb_commands.obj (.text:CMD_rand)
+                  00001938    00000014     driverlib.lib : hibernate.obj (.text:HibernateEnableExpClk)
+                  0000194c    00000014                   : hibernate.obj (.text:HibernateIntClear)
+                  00001960    00000014                   : hibernate.obj (.text:HibernateRTCEnable)
+                  00001974    00000014                   : hibernate.obj (.text:HibernateRequest)
+                  00001988    00000014     rgb.obj (.text:RGBIntensitySet)
+                  0000199c    00000014     driverlib.lib : sysctl.obj (.text:SysCtlResetCauseClear)
+                  000019b0    00000014                   : systick.obj (.text:SysTickEnable)
+                  000019c4    00000014                   : systick.obj (.text:SysTickIntEnable)
+                  000019d8    00000012     uartstdio.obj (.text:GetBufferCount)
+                  000019ea    00000002     rtsv7M4_T_le_v4SPD16_eabi.lib : div0.asm.obj (.text)
+                  000019ec    00000010     driverlib.lib : hibernate.obj (.text:HibernateIsActive)
+                  000019fc    00000010                   : hibernate.obj (.text:HibernateRTCMatchSet)
+                  00001a0c    00000010                   : interrupt.obj (.text:IntMasterEnable)
+                  00001a1c    00000010                   : systick.obj (.text:SysTickPeriodSet)
+                  00001a2c    00000010                   : hibernate.obj (.text:_HibernateWriteComplete)
+                  00001a3c    0000000e     uartstdio.obj (.text:IsBufferEmpty)
+                  00001a4a    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  00001a58    0000000c     driverlib.lib : cpu.obj (.text:CPUcpsie)
+                  00001a64    0000000c                   : sysctl.obj (.text:SysCtlResetCauseGet)
+                  00001a70    0000000c     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init)
+                  00001a7c    0000000a     rgb_commands.obj (.text:CMD_hib)
+                  00001a86    00000006     startup_ccs.obj (.text:ResetISR)
+                  00001a8c    00000006     driverlib.lib : sysctl.obj (.text:SysCtlDelay)
+                  00001a92    00000006                   : uart.obj (.text:UARTClockSourceSet)
+                  00001a98    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
+                  00001a9c    00000004                                   : exit.c.obj (.text:abort:abort)
+
+.const     0    00001aa0    0000016c     
+                  00001aa0    000000dc     rgb_commands.obj (.const:.string)
+                  00001b7c    0000006c     driverlib.lib : sysctl.obj (.const:g_pui32Xtals)
+                  00001be8    0000000c     uartstdio.obj (.const:g_ui32UARTBase)
+                  00001bf4    0000000c     uartstdio.obj (.const:g_ui32UARTInt)
+                  00001c00    0000000c     uartstdio.obj (.const:g_ui32UARTPeriph)
+
+.cinit     0    00001c10    00000090     
+                  00001c10    00000065     (.cinit..data.load) [load image, compression = lzss]
+                  00001c75    00000003     --HOLE-- [fill = 0]
+                  00001c78    0000000c     (__TI_handler_table)
+                  00001c84    00000004     --HOLE-- [fill = 0]
+                  00001c88    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00001c90    00000010     (__TI_cinit_table)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.bss       0    20000800    0000056c     UNINITIALIZED
+                  20000800    00000400     uartstdio.obj (.bss:g_pcUARTTxBuffer)
+                  20000c00    00000080     qs-rgb.obj (.bss:g_cInput)
+                  20000c80    00000080     uartstdio.obj (.bss:g_pcUARTRxBuffer)
+                  20000d00    00000024     cmdline.obj (.bss:g_ppcArgv)
+                  20000d24    00000024     (.common:g_sAppState)
+                  20000d48    00000010     qs-rgb.obj (.bss)
+                  20000d58    0000000c     rgb.obj (.bss:g_ui32Colors)
+                  20000d64    00000008     uartstdio.obj (.bss)
+
+.data      0    20000d6c    00000080     UNINITIALIZED
+                  20000d6c    00000048     rgb_commands.obj (.data:g_psCmdTable)
+                  20000db4    0000001c     qs-rgb.obj (.data:fManualColors)
+                  20000dd0    00000015     uartstdio.obj (.data)
+                  20000de5    00000003     buttons.obj (.data)
+                  20000de8    00000004     rgb.obj (.data)
+
+.stack     0    20000000    00000800     UNINITIALIZED
+                  20000000    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.stack)
+                  20000004    000007fc     --HOLE--
+
+__llvm_prf_cnts 
+*          0    20000000    00000000     UNINITIALIZED
+
+MODULE SUMMARY
+
+       Module                       code   ro data   rw data
+       ------                       ----   -------   -------
+    ./
+       qs-rgb.obj                   1408   0         208    
+       startup_ccs.obj              12     620       0      
+       rgb_commands.obj             254    220       72     
+    +--+----------------------------+------+---------+---------+
+       Total:                       1674   840       280    
+                                                            
+    ./drivers/
+       rgb.obj                      720    0         16     
+       buttons.obj                  240    0         3      
+    +--+----------------------------+------+---------+---------+
+       Total:                       960    0         19     
+                                                            
+    ./utils/
+       uartstdio.obj                1668   36        1181   
+       ustdlib.obj                  156    0         0      
+       cmdline.obj                  100    0         36     
+    +--+----------------------------+------+---------+---------+
+       Total:                       1924   36        1217   
+                                                            
+    /Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib/rtsv7M4_T_le_v4SPD16_eabi.lib
+       s_sinf.c.obj                 164    0         0      
+       memcpy_t2.asm.obj            156    0         0      
+       memset_t2.asm.obj            122    0         0      
+       copy_decompress_lzss.c.obj   104    0         0      
+       autoinit.c.obj               68     0         0      
+       u_divt2.asm.obj              64     0         0      
+       boot_cortex_m.c.obj          52     0         0      
+       strcmp.c.obj                 24     0         0      
+       copy_decompress_none.c.obj   14     0         0      
+       copy_zero_init.c.obj         12     0         0      
+       exit.c.obj                   4      0         0      
+       pre_init.c.obj               4      0         0      
+       div0.asm.obj                 2      0         0      
+    +--+----------------------------+------+---------+---------+
+       Total:                       790    0         0      
+                                                            
+    /Users/venkim/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib
+       sysctl.obj                   362    108       0      
+       hibernate.obj                396    0         0      
+       systick.obj                  56     0         0      
+       interrupt.obj                16     0         0      
+       cpu.obj                      12     0         0      
+       uart.obj                     6      0         0      
+    +--+----------------------------+------+---------+---------+
+       Total:                       848    108       0      
+                                                            
+       Stack:                       0      0         2048   
+       Linker Generated:            0      137       0      
+    +--+----------------------------+------+---------+---------+
+       Grand Total:                 6196   1121      3564   
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 00001c90 records: 2, size/record: 8, table size: 16
+	.data: load addr=00001c10, load size=00000065 bytes, run addr=20000d6c, run size=00000080 bytes, compression=lzss
+	.bss: load addr=00001c88, load size=00000008 bytes, run addr=20000800, run size=0000056c bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 00001c78 records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_decompress_lzss
+	index: 1, handler: __TI_decompress_none
+	index: 2, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                          
+-------   ----                          
+00000b29  AppButtonHandler              
+00001211  AppHibernateEnter             
+00000a49  AppRainbow                    
+00001301  ButtonsInit                   
+0000110d  ButtonsPoll                   
+00001a9d  C$$EXIT                       
+00001369  CMD_help                      
+00001a7d  CMD_hib                       
+000016e9  CMD_intensity                 
+00001925  CMD_rand                      
+00001725  CMD_rgb                       
+00001a59  CPUcpsie                      
+000014a1  CmdLineProcess                
+00001505  ConfigureUART                 
+00001885  HibernateDataGet              
+0000185d  HibernateDataSet              
+00001939  HibernateEnableExpClk         
+000018c5  HibernateGPIORetentionEnable  
+0000194d  HibernateIntClear             
+000018dd  HibernateIntStatus            
+000019ed  HibernateIsActive             
+00001961  HibernateRTCEnable            
+000019fd  HibernateRTCMatchSet          
+00001805  HibernateRTCSet               
+00001975  HibernateRequest              
+00001569  HibernateWakeSet              
+00001a0d  IntMasterEnable               
+00000ff1  RGBColorSet                   
+000013d1  RGBDisable                    
+00000bfd  RGBEnable                     
+00000945  RGBInit                       
+00001989  RGBIntensitySet               
+00001a87  ResetISR                      
+00000835  SysCtlClockGet                
+00001a8d  SysCtlDelay                   
+0000179d  SysCtlPeripheralEnable        
+0000199d  SysCtlResetCauseClear         
+00001a65  SysCtlResetCauseGet           
+000019b1  SysTickEnable                 
+000019c5  SysTickIntEnable              
+00001289  SysTickIntHandler             
+00001a1d  SysTickPeriodSet              
+00001a93  UARTClockSourceSet            
+00001831  UARTFlushRx                   
+00001761  UARTFlushTx                   
+00001621  UARTPeek                      
+00000cbd  UARTStdioConfig               
+000006d5  UARTStdioIntHandler           
+000015cd  UARTgets                      
+000018a9  UARTprintf                    
+000004e5  UARTvprintf                   
+00000d6d  UARTwrite                     
+20000800  __STACK_END                   
+00000800  __STACK_SIZE                  
+20000800  __STACK_TOP                   
+00001c90  __TI_CINIT_Base               
+00001ca0  __TI_CINIT_Limit              
+00001c78  __TI_Handler_Table_Base       
+00001c84  __TI_Handler_Table_Limit      
+00001665  __TI_auto_init_nobinit_nopinit
+00001439  __TI_decompress_lzss          
+00001a4b  __TI_decompress_none          
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+00000000  __TI_static_base__            
+00001a71  __TI_zero_init                
+000019eb  __aeabi_idiv0                 
+000019eb  __aeabi_ldiv0                 
+00001195  __aeabi_memclr                
+00001195  __aeabi_memclr4               
+00001195  __aeabi_memclr8               
+00000eb9  __aeabi_memcpy                
+00000eb9  __aeabi_memcpy4               
+00000eb9  __aeabi_memcpy8               
+00001197  __aeabi_memset                
+00001197  __aeabi_memset4               
+00001197  __aeabi_memset8               
+000016a9  __aeabi_uidiv                 
+000016a9  __aeabi_uidivmod              
+ffffffff  __binit__                     
+ffffffff  __c_args__                    
+UNDEFED   __mpu_init                    
+20000000  __stack                       
+20000000  __start___llvm_prf_cnts       
+20000000  __stop___llvm_prf_cnts        
+000017d1  _c_int00_noargs               
+UNDEFED   _system_post_cinit            
+00001a99  _system_pre_init              
+00001a9d  abort                         
+ffffffff  binit                         
+00000000  g_pfnVectors                  
+20000d6c  g_psCmdTable                  
+20000d24  g_sAppState                   
+0000026d  main                          
+00000eb9  memcpy                        
+0000119d  memset                        
+00000e15  sinf                          
+0000190d  strcmp                        
+00000f55  ustrtoul                      
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                          
+-------   ----                          
+00000000  __TI_static_base__            
+00000000  g_pfnVectors                  
+0000026d  main                          
+000004e5  UARTvprintf                   
+000006d5  UARTStdioIntHandler           
+00000800  __STACK_SIZE                  
+00000835  SysCtlClockGet                
+00000945  RGBInit                       
+00000a49  AppRainbow                    
+00000b29  AppButtonHandler              
+00000bfd  RGBEnable                     
+00000cbd  UARTStdioConfig               
+00000d6d  UARTwrite                     
+00000e15  sinf                          
+00000eb9  __aeabi_memcpy                
+00000eb9  __aeabi_memcpy4               
+00000eb9  __aeabi_memcpy8               
+00000eb9  memcpy                        
+00000f55  ustrtoul                      
+00000ff1  RGBColorSet                   
+0000110d  ButtonsPoll                   
+00001195  __aeabi_memclr                
+00001195  __aeabi_memclr4               
+00001195  __aeabi_memclr8               
+00001197  __aeabi_memset                
+00001197  __aeabi_memset4               
+00001197  __aeabi_memset8               
+0000119d  memset                        
+00001211  AppHibernateEnter             
+00001289  SysTickIntHandler             
+00001301  ButtonsInit                   
+00001369  CMD_help                      
+000013d1  RGBDisable                    
+00001439  __TI_decompress_lzss          
+000014a1  CmdLineProcess                
+00001505  ConfigureUART                 
+00001569  HibernateWakeSet              
+000015cd  UARTgets                      
+00001621  UARTPeek                      
+00001665  __TI_auto_init_nobinit_nopinit
+000016a9  __aeabi_uidiv                 
+000016a9  __aeabi_uidivmod              
+000016e9  CMD_intensity                 
+00001725  CMD_rgb                       
+00001761  UARTFlushTx                   
+0000179d  SysCtlPeripheralEnable        
+000017d1  _c_int00_noargs               
+00001805  HibernateRTCSet               
+00001831  UARTFlushRx                   
+0000185d  HibernateDataSet              
+00001885  HibernateDataGet              
+000018a9  UARTprintf                    
+000018c5  HibernateGPIORetentionEnable  
+000018dd  HibernateIntStatus            
+0000190d  strcmp                        
+00001925  CMD_rand                      
+00001939  HibernateEnableExpClk         
+0000194d  HibernateIntClear             
+00001961  HibernateRTCEnable            
+00001975  HibernateRequest              
+00001989  RGBIntensitySet               
+0000199d  SysCtlResetCauseClear         
+000019b1  SysTickEnable                 
+000019c5  SysTickIntEnable              
+000019eb  __aeabi_idiv0                 
+000019eb  __aeabi_ldiv0                 
+000019ed  HibernateIsActive             
+000019fd  HibernateRTCMatchSet          
+00001a0d  IntMasterEnable               
+00001a1d  SysTickPeriodSet              
+00001a4b  __TI_decompress_none          
+00001a59  CPUcpsie                      
+00001a65  SysCtlResetCauseGet           
+00001a71  __TI_zero_init                
+00001a7d  CMD_hib                       
+00001a87  ResetISR                      
+00001a8d  SysCtlDelay                   
+00001a93  UARTClockSourceSet            
+00001a99  _system_pre_init              
+00001a9d  C$$EXIT                       
+00001a9d  abort                         
+00001c78  __TI_Handler_Table_Base       
+00001c84  __TI_Handler_Table_Limit      
+00001c90  __TI_CINIT_Base               
+00001ca0  __TI_CINIT_Limit              
+20000000  __stack                       
+20000000  __start___llvm_prf_cnts       
+20000000  __stop___llvm_prf_cnts        
+20000800  __STACK_END                   
+20000800  __STACK_TOP                   
+20000d24  g_sAppState                   
+20000d6c  g_psCmdTable                  
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+ffffffff  __binit__                     
+ffffffff  __c_args__                    
+ffffffff  binit                         
+UNDEFED   __mpu_init                    
+UNDEFED   _system_post_cinit            
+
+[100 symbols]

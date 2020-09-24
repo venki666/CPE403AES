@@ -1,0 +1,28 @@
+
+**** Build of configuration Debug for project driverlib-cm4f ****
+
+/Applications/ti/ccs1010/ccs/utils/bin/gmake -k -j 7 all -O 
+ 
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/VIO/Source/vio_memory.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/driverlib-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/VIO/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="VIO/Source/vio_memory.d_raw" --obj_directory="VIO/Source"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/VIO/Source/vio_memory.c"
+ 
+>> Compilation failure
+VIO/Source/subdir_rules.mk:14: recipe for target 'VIO/Source/vio_memory.obj' failed
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/VIO/Source/vio_memory.c", line 30: fatal error #1965: cannot open source file "RTE_Components.h"
+1 catastrophic error detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/VIO/Source/vio_memory.c".
+Compilation terminated.
+gmake: *** [VIO/Source/vio_memory.obj] Error 1
+"/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/VIO/Source/vio.c", line 30: fatal error #1965: cannot open source file "RTE_Components.h"
+1 catastrophic error detected in the compilation of "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/VIO/Source/vio.c".
+Compilation terminated.
+gmake: *** [VIO/Source/vio.obj] Error 1
+Building file: "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/VIO/Source/vio.c"
+Invoking: ARM Compiler
+"/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --opt_for_speed=0 --include_path="/Users/venkim/workspace_v10/driverlib-cm4f" --include_path="/Applications/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Core/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/Include" --include_path="/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/VIO/Include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="VIO/Source/vio.d_raw" --obj_directory="VIO/Source"  "/Users/venkim/ti/CMSIS_5-5.7.0/CMSIS/Driver/VIO/Source/vio.c"
+ 
+>> Compilation failure
+VIO/Source/subdir_rules.mk:7: recipe for target 'VIO/Source/vio.obj' failed
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

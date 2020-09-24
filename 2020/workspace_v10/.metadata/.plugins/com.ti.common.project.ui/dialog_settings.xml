@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.ti.common.project.ui.internal.dialogs.ProductSelectionDialog">
+		<item key="PRODUCT_TYPE" value="com.ti.rtsc.XDCtools"/>
+	</section>
+</section>
