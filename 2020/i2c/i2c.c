@@ -21,20 +21,20 @@ void initI2C0(void)
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
 	SysCtlDelay(3);
 
-    GPIOPinConfigure(GPIO_PB2_I2C0SCL);
-	GPIOPinConfigure(GPIO_PB3_I2C0SDA);
+  GPIOPinConfigure(GPIO_PB2_I2C0SCL);
+  GPIOPinConfigure(GPIO_PB3_I2C0SDA);
 
-	GPIOPinTypeI2CSCL(GPIO_PORTB_BASE, GPIO_PIN_2);
-	GPIOPinTypeI2C(GPIO_PORTB_BASE, GPIO_PIN_3);
+  GPIOPinTypeI2CSCL(GPIO_PORTB_BASE, GPIO_PIN_2);
+  GPIOPinTypeI2C(GPIO_PORTB_BASE, GPIO_PIN_3);
 
-    I2CMasterInitExpClk(I2C0_BASE, SysCtlClockGet(), true);
+  I2CMasterInitExpClk(I2C0_BASE, SysCtlClockGet(), true);
     //clear I2C FIFOs
     HWREG(I2C0_BASE + I2C_O_FIFOCTL) = 80008000;
-}
+  }
 
-void readI2C(uint8_t slave_addr, uint8_t reg, int *data)
-{
-    I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr, false);
+  void readI2C(uint8_t slave_addr, uint8_t reg, int *data)
+  {
+    I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr, true);
     I2CMasterDataPut(I2C0_BASE, reg);
     I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_START);
     while(I2CMasterBusy(I2C0_BASE));
@@ -42,7 +42,7 @@ void readI2C(uint8_t slave_addr, uint8_t reg, int *data)
     I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_SINGLE_RECEIVE);
     while(I2CMasterBusy(I2C0_BASE));
     *data = I2CMasterDataGet(I2C0_BASE);
-}
+  }
 
 
 // Sends 1 byte over i2c
@@ -51,15 +51,15 @@ void writeI2C(uint8_t slave_addr, uint8_t reg, uint8_t data)
 	I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr, false);
 	I2CMasterDataPut(I2C0_BASE, reg);
 	I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_START);
- 	while(I2CMasterBusy(I2C0_BASE));
-	I2CMasterDataPut(I2C0_BASE, data);
-	I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_FINISH);
-	while(I2CMasterBusy(I2C0_BASE));
+  while(I2CMasterBusy(I2C0_BASE));
+  I2CMasterDataPut(I2C0_BASE, data);
+  I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_FINISH);
+  while(I2CMasterBusy(I2C0_BASE));
 }
 
 //sends an I2C command to the specified slave
- void I2C0_Send(uint8_t slave_addr, uint8_t num_of_args, ...)
- {
+void I2C0_Send(uint8_t slave_addr, uint8_t num_of_args, ...)
+{
    // Tell the master module what address it will place on the bus when
    // communicating with the slave.
    I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr, false);
@@ -112,53 +112,50 @@ void writeI2C(uint8_t slave_addr, uint8_t reg, uint8_t data)
    }
  }
 
-void I2C0_Write (uint8_t addr, uint8_t N, ...)
-//Writes data from master to slave
-//Takes the address of the device, the number of arguments, 
-//and a variable amount of register addresses to write to
+ void I2C0_read(uint8_t slave_addr, uint8_t *RxData, uint8_t N)
+ {
+   uint8_t i;
+
+   I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr>>1, true);
+   while (I2CMasterBusy(I2C0_BASE));
+
+   if (N==1)
+   {
+    I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_SINGLE_RECEIVE);
+    while (I2CMasterBusy(I2C0_BASE));
+    RxData[0]=I2CMasterDataGet(I2C0_BASE);
+    while (I2CMasterBusy(I2C0_BASE));
+  }
+  else
+  {
+    I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_RECEIVE_START);
+    while (I2CMasterBusy(I2C0_BASE));
+    RxData[0]=I2CMasterDataGet(I2C0_BASE);
+    while (I2CMasterBusy(I2C0_BASE));
+
+    for (i=1;i<(N-1);i++)
+    {
+     I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_RECEIVE_CONT);
+     while (I2CMasterBusy(I2C0_BASE));
+     RxData[i]=I2CMasterDataGet(I2C0_BASE);
+     while (I2CMasterBusy(I2C0_BASE));
+   }
+
+   I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_RECEIVE_FINISH);
+   while (I2CMasterBusy(I2C0_BASE));
+   RxData[N-1]=I2CMasterDataGet(I2C0_BASE);
+   while (I2CMasterBusy(I2C0_BASE));
+ }
+}
+
+//sends an I2C command to the specified slave
+void I2C0_Send16(uint8_t slave_addr, uint8_t pointer_reg, uint16_t TxData)
 {
-    I2CMasterSlaveAddrSet (I2C0_BASE, addr, false); //Find the device based on the address given
-    while (I2CMasterBusy (I2C0_BASE));
 
-    va_list vargs;  //variable list to hold the register addresses passed
+}
 
-    va_start (vargs, N);    //initialize the variable list with the number of arguments
-
-    I2CMasterDataPut (I2C0_BASE, va_arg(vargs, uint8_t));   
-    //put the first argument in the list in to the I2C bus
-    while (I2CMasterBusy (I2C0_BASE));
-    if (N == 1) //if only 1 argument is passed, send that register command then stop
-    {
-        I2CMasterControl (I2C0_BASE, I2C_MASTER_CMD_SINGLE_SEND);
-        while (I2CMasterBusy (I2C0_BASE));
-        va_end (vargs);
-    }
-    else
-    //if more than 1, loop through all the commands until they are all sent
-    {
-        I2CMasterControl (I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_START);
-        while (I2CMasterBusy (I2C0_BASE));
-        uint8_t i;
-        for (i = 1; i < N - 1; i++)
-        {
-            I2CMasterDataPut (I2C0_BASE, va_arg(vargs, uint8_t));   
-            //send the next register address to the bus
-            while (I2CMasterBusy (I2C0_BASE));
-
-            I2CMasterControl (I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_CONT);   
-            //burst send, keeps receiving until the stop signal is received
-            while (I2CMasterBusy (I2C0_BASE));
-        }
-
-        I2CMasterDataPut (I2C0_BASE, va_arg(vargs, uint8_t));   
-        //puts the last argument on the SDA bus
-        while (I2CMasterBusy (I2C0_BASE));
-
-        I2CMasterControl (I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_FINISH); 
-        //send the finish signal to stop transmission
-        while (I2CMasterBusy (I2C0_BASE));
-
-        va_end (vargs);
-    }
+//sends an I2C command to the specified slave
+void I2C0_Read16(uint8_t slave_addr, uint8_t pointer_reg, uint16_t RxData )
+{
 
 }
