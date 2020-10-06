@@ -1,5 +1,4 @@
-//Midterm1
-//
+
 //References:
 //http://www.ti.com/lit/ug/spmu371d/spmu371d.pdf
 //
@@ -33,7 +32,6 @@
 #include "driverlib/uart.h"
 #include "math.h"
 
-//For Task3/Task4
 #include "IQmath/IQmathLib.h"
 
 #define ACCELEROMETER_SENSITIVITY 8192.0

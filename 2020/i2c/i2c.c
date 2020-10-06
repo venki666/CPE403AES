@@ -116,7 +116,7 @@ void I2C0_Send(uint8_t slave_addr, uint8_t num_of_args, ...)
  {
    uint8_t i;
 
-   I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr>>1, true);
+   I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr, true);
    while (I2CMasterBusy(I2C0_BASE));
 
    if (N==1)
@@ -151,11 +151,41 @@ void I2C0_Send(uint8_t slave_addr, uint8_t num_of_args, ...)
 //sends an I2C command to the specified slave
 void I2C0_Send16(uint8_t slave_addr, uint8_t pointer_reg, uint16_t TxData)
 {
-
+  uint8_t data;
+  I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr, false);
+  I2CMasterDataPut(I2C0_BASE, pointer_reg);
+  I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_START);
+  while(I2CMasterBusy(I2C0_BASE));
+  // MSB First
+  data = (uint8_t)((TxData >> 8) & 0x00FF);
+  I2CMasterDataPut(I2C0_BASE, data);
+  while(I2CMasterBusy(I2C0_BASE));
+  //LSB Later
+  data = (uint8_t)(TxData  & 0x00FF);
+  I2CMasterDataPut(I2C0_BASE, data);
+  I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_FINISH);
+  while(I2CMasterBusy(I2C0_BASE));
 }
 
 //sends an I2C command to the specified slave
 void I2C0_Read16(uint8_t slave_addr, uint8_t pointer_reg, uint16_t RxData )
 {
-
-}
+    uint8_t data;
+    I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr, true);
+    I2CMasterDataPut(I2C0_BASE, pointer_reg);
+    I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_START);
+    while(I2CMasterBusy(I2C0_BASE));
+    I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr, true);
+    I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_RECEIVE_CONT);
+    while(I2CMasterBusy(I2C0_BASE));
+    //MSB first
+    data = I2CMasterDataGet(I2C0_BASE);
+    RxData = (uint16_t)(data << 8);
+    I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_RECEIVE_CONT);
+    while(I2CMasterBusy(I2C0_BASE));
+    //LSB later
+    data = I2CMasterDataGet(I2C0_BASE);
+    RxData |= (uint16_t)(data);
+    I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_FINISH);
+    while(I2CMasterBusy(I2C0_BASE));
+  }
