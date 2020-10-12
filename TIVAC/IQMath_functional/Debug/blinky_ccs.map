@@ -1,0 +1,249 @@
+******************************************************************************
+                  TI ARM Linker Unix v20.2.1                   
+******************************************************************************
+>> Linked Thu Oct  8 14:19:28 2020
+
+OUTPUT FILE NAME:   <IQMath_functional.out>
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00002e75
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00040000  00002f78  0003d088  R  X
+  SRAM                  20000000   00008000  00000204  00007dfc  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00002f7c   00002f7c    r-x
+  00000000    00000000    0000026c   0000026c    r-- .intvecs
+  0000026c    0000026c    00002cf8   00002cf8    r-x .text
+  00002f68    00002f68    00000014   00000014    r-- .cinit
+20000000    20000000    00000204   00000000    rw-
+  20000000    20000000    00000200   00000000    rw- .stack
+  20000200    20000200    00000004   00000000    rw- .bss
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    0000026c     
+                  00000000    0000026c     startup_ccs.obj (.intvecs)
+
+.text      0    0000026c    00002cf8     
+                  0000026c    00000c00     IQmathLib.lib : IQtables.obj (.text:atan2PU_table)
+                  00000e6c    00000804                   : IQtables.obj (.text:sincos_table)
+                  00001670    00000800                   : IQtables.obj (.text:div_table)
+                  00001e70    00000800                   : IQtables.obj (.text:isqrt_table)
+                  00002670    0000013c     iqmath_functional.obj (.text:main)
+                  000027ac    000000d4     IQmathLib.lib : IQNatan2.obj (.text:_IQ24atan2)
+                  00002880    000000b8                   : IQNcos.obj (.text:_IQ24cos)
+                  00002938    000000b8                   : IQNexp.obj (.text:_IQ24exp)
+                  000029f0    000000b4                   : IQNsin.obj (.text:_IQ24sin)
+                  00002aa4    00000090                   : IQNdiv.obj (.text:_IQ24div)
+                  00002b34    00000090                   : IQNdiv.obj (.text:_IQ8div)
+                  00002bc4    0000008c                   : IQNcos.obj (.text:_IQ15cos)
+                  00002c50    00000088                   : IQNsin.obj (.text:_IQ15sin)
+                  00002cd8    00000080                   : IQNexp2.obj (.text:_IQ24exp2)
+                  00002d58    0000006c                   : IQNsqrt.obj (.text:_IQ24sqrt)
+                  00002dc4    0000006c                   : IQNsqrt.obj (.text:_IQ8sqrt)
+                  00002e30    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit:__TI_auto_init_nobinit_nopinit)
+                  00002e74    00000034                                   : boot_cortex_m.c.obj (.text:_c_int00_noargs:_c_int00_noargs)
+                  00002ea8    00000024     IQmathLib.lib : IQNtoF.obj (.text:_IQ15toF)
+                  00002ecc    00000024                   : IQNtoF.obj (.text:_IQ24toF)
+                  00002ef0    00000024                   : IQNtoF.obj (.text:_IQ8toF)
+                  00002f14    0000001c     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
+                  00002f30    00000010     IQmathLib.lib : IQNmpy.obj (.text:_IQ24mpy)
+                  00002f40    00000010                   : IQNmpy.obj (.text:_IQ8mpy)
+                  00002f50    00000006     startup_ccs.obj (.text:ResetISR)
+                  00002f56    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
+                  00002f5a    00000004                                   : exit.c.obj (.text:abort:abort)
+                  00002f5e    00000002     startup_ccs.obj (.text:FaultISR)
+                  00002f60    00000002     startup_ccs.obj (.text:IntDefaultHandler)
+                  00002f62    00000002     startup_ccs.obj (.text:NmiSR)
+
+.cinit     0    00002f68    00000014     
+                  00002f68    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00002f70    00000004     (__TI_handler_table)
+                  00002f74    00000008     (__TI_cinit_table)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.bss       0    20000200    00000004     UNINITIALIZED
+                  20000200    00000004     (.common:res)
+
+.stack     0    20000000    00000200     UNINITIALIZED
+                  20000000    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.stack)
+                  20000004    000001fc     --HOLE--
+
+__llvm_prf_cnts 
+*          0    20000000    00000000     UNINITIALIZED
+
+MODULE SUMMARY
+
+       Module                  code   ro data   rw data
+       ------                  ----   -------   -------
+    ./
+       startup_ccs.obj         12     620       0      
+       iqmath_functional.obj   316    0         4      
+    +--+-----------------------+------+---------+---------+
+       Total:                  328    620       4      
+                                                       
+    /Applications/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib/rtsv7M4_T_le_v4SPD16_eabi.lib
+       autoinit.c.obj          68     0         0      
+       boot_cortex_m.c.obj     52     0         0      
+       copy_zero_init.c.obj    28     0         0      
+       exit.c.obj              4      0         0      
+       pre_init.c.obj          4      0         0      
+    +--+-----------------------+------+---------+---------+
+       Total:                  156    0         0      
+                                                       
+    /Users/venkim/ti/tivaware_c_series_2_1_4_178/IQmath/ccs/IQmathLib/Debug/IQmathLib.lib
+       IQtables.obj            0      9220      0      
+       IQNcos.obj              324    0         0      
+       IQNsin.obj              316    0         0      
+       IQNdiv.obj              288    0         0      
+       IQNsqrt.obj             216    0         0      
+       IQNatan2.obj            212    0         0      
+       IQNexp.obj              184    0         0      
+       IQNexp2.obj             128    0         0      
+       IQNtoF.obj              108    0         0      
+       IQNmpy.obj              32     0         0      
+    +--+-----------------------+------+---------+---------+
+       Total:                  1808   9220      0      
+                                                       
+       Stack:                  0      0         512    
+       Linker Generated:       0      20        0      
+    +--+-----------------------+------+---------+---------+
+       Grand Total:            2292   9860      516    
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 00002f74 records: 1, size/record: 8, table size: 8
+	.bss: load addr=00002f68, load size=00000008 bytes, run addr=20000200, run size=00000004 bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 00002f70 records: 1, size/record: 4, table size: 4
+	index: 0, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                          
+-------   ----                          
+00002f5b  C$$EXIT                       
+00002f51  ResetISR                      
+00002bc5  _IQ15cos                      
+00002c51  _IQ15sin                      
+00002ea9  _IQ15toF                      
+000027ad  _IQ24atan2                    
+00002881  _IQ24cos                      
+00002aa5  _IQ24div                      
+00002939  _IQ24exp                      
+00002cd9  _IQ24exp2                     
+00002f31  _IQ24mpy                      
+000029f1  _IQ24sin                      
+00002d59  _IQ24sqrt                     
+00002ecd  _IQ24toF                      
+00002b35  _IQ8div                       
+00002f41  _IQ8mpy                       
+00002dc5  _IQ8sqrt                      
+00002ef1  _IQ8toF                       
+20000200  __STACK_END                   
+00000200  __STACK_SIZE                  
+20000200  __STACK_TOP                   
+00002f74  __TI_CINIT_Base               
+00002f7c  __TI_CINIT_Limit              
+00002f70  __TI_Handler_Table_Base       
+00002f74  __TI_Handler_Table_Limit      
+00002e31  __TI_auto_init_nobinit_nopinit
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+00000000  __TI_static_base__            
+00002f15  __TI_zero_init_nomemset       
+ffffffff  __binit__                     
+ffffffff  __c_args__                    
+UNDEFED   __mpu_init                    
+20000000  __stack                       
+20000000  __start___llvm_prf_cnts       
+20000000  __stop___llvm_prf_cnts        
+00002e75  _c_int00_noargs               
+UNDEFED   _system_post_cinit            
+00002f57  _system_pre_init              
+00002f5b  abort                         
+0000026c  atan2PU_table                 
+ffffffff  binit                         
+00001670  div_table                     
+00000000  g_pfnVectors                  
+00001e70  isqrt_table                   
+00002671  main                          
+20000200  res                           
+00000e6c  sincos_table                  
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                          
+-------   ----                          
+00000000  __TI_static_base__            
+00000000  g_pfnVectors                  
+00000200  __STACK_SIZE                  
+0000026c  atan2PU_table                 
+00000e6c  sincos_table                  
+00001670  div_table                     
+00001e70  isqrt_table                   
+00002671  main                          
+000027ad  _IQ24atan2                    
+00002881  _IQ24cos                      
+00002939  _IQ24exp                      
+000029f1  _IQ24sin                      
+00002aa5  _IQ24div                      
+00002b35  _IQ8div                       
+00002bc5  _IQ15cos                      
+00002c51  _IQ15sin                      
+00002cd9  _IQ24exp2                     
+00002d59  _IQ24sqrt                     
+00002dc5  _IQ8sqrt                      
+00002e31  __TI_auto_init_nobinit_nopinit
+00002e75  _c_int00_noargs               
+00002ea9  _IQ15toF                      
+00002ecd  _IQ24toF                      
+00002ef1  _IQ8toF                       
+00002f15  __TI_zero_init_nomemset       
+00002f31  _IQ24mpy                      
+00002f41  _IQ8mpy                       
+00002f51  ResetISR                      
+00002f57  _system_pre_init              
+00002f5b  C$$EXIT                       
+00002f5b  abort                         
+00002f70  __TI_Handler_Table_Base       
+00002f74  __TI_CINIT_Base               
+00002f74  __TI_Handler_Table_Limit      
+00002f7c  __TI_CINIT_Limit              
+20000000  __stack                       
+20000000  __start___llvm_prf_cnts       
+20000000  __stop___llvm_prf_cnts        
+20000200  __STACK_END                   
+20000200  __STACK_TOP                   
+20000200  res                           
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+ffffffff  __binit__                     
+ffffffff  __c_args__                    
+ffffffff  binit                         
+UNDEFED   __mpu_init                    
+UNDEFED   _system_post_cinit            
+
+[49 symbols]
