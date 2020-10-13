@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="xconfig_ledToggle_SWI" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/ledToggle_SWI_pem4f.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="/Users/venkim/workspace_ccs/ledToggle_EK_TM4C123GXL_TI/ledToggle_SWI.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/ledToggle_SWI_pem4f.mak" src="package.bld"/>
+        <srcFile name="package/cfg/ledToggle_SWI_pem4f.oem4f.dep" src="package/cfg/ledToggle_SWI_pem4f.c"/>
+        <srcFile name="package/cfg/ledToggle_SWI_pem4f.dep" src="package/cfg/ledToggle_SWI_pem4f.cfg"/>
+        <srcFile name="package/cfg/ledToggle_SWI.xem4f.mak" src="package.bld"/>
+        <srcFile name="package/rel/xconfig_ledToggle_SWI.tar.dep" src="package/rel/xconfig_ledToggle_SWI.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.arm.elf.M4F"
+            version="ti.targets.arm.elf.M4F{1,0,17.6,0"
+            rawVersion="17.6.0"
+            platform="ti.platforms.tiva:TM4C1294NCPDT:1"
+            isa="v7M4"
+            suffix="em4f"
+            rootDir="/Applications/ti/ccsv7/tools/compiler/ti-cgt-arm_17.6.0.STS"
+            os="undefined"
+            rts="ti.targets.arm.rtsarm">
+            <model endian="little"
+                codeModel="thumb2"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="ledToggle_SWI"
+        pname="ledToggle_SWI.pem4f"
+        target="ti.targets.arm.elf.M4F"
+        platform="ti.platforms.tiva:TM4C123GH6PM"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/ledToggle_SWI_pem4f.cfg"
+        xCfgPrefix="package/cfg/ledToggle_SWI_pem4f"
+        cfgScript="/Users/venkim/workspace_ccs/ledToggle_EK_TM4C123GXL_TI/ledToggle_SWI.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="ledToggle_SWI"
+        pname="ledToggle_SWI.xem4f"
+        target="ti.targets.arm.elf.M4F"
+        platform="ti.platforms.tiva:TM4C123GH6PM"
+        profile="release"
+        xCfgScript="package/cfg/ledToggle_SWI_pem4f.cfg"
+        xCfgPrefix="package/cfg/ledToggle_SWI_pem4f"
+        cfgScript="/Users/venkim/workspace_ccs/ledToggle_EK_TM4C123GXL_TI/ledToggle_SWI.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="ledToggle_SWI.xem4f"
+        args=""
+        groupName="ledToggle_SWI.xem4f"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="xconfig_ledToggle_SWI"
+        pname="xconfig_ledToggle_SWI.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

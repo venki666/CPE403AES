@@ -1,0 +1,53 @@
+clean::
+	$(RM) package/xconfig_ledToggle_BIOS.sch
+	$(RM) package/.vers_g180
+	$(RM) package/.vers_r170
+	$(RM) package/.vers_b160
+	$(RM) package/.xdc-B06
+	$(RM) package/xconfig_ledToggle_BIOS.java
+	$(RM) package/xconfig_ledToggle_BIOS.class
+	$(RM) package/package_xconfig_ledToggle_BIOS.c
+	$(RM) package/package.defs.h
+	$(RM) package/xconfig_ledToggle_BIOS.ccs
+
+.interfaces: package/xconfig_ledToggle_BIOS.sch package/.vers_g180 package/.vers_r170 package/.vers_b160 package/.xdc-B06 package/xconfig_ledToggle_BIOS.java package/package_xconfig_ledToggle_BIOS.c package/package.defs.h package/xconfig_ledToggle_BIOS.ccs 
+package/package.xdc.inc: package/.vers_g180
+package/.vers_g180:
+package/package.xdc.inc: package/.vers_r170
+package/.vers_r170:
+package/package.xdc.inc: package/.vers_b160
+package/.vers_b160:
+
+.interfaces: 
+
+# schema include file dependencies
+package.xs:
+package/package.xdc.inc: package.xs
+
+# schema update dependencies
+package/package.xdc.inc: xdc/IPackage.xdc
+xdc/IPackage.xdc:
+vpath xdc/IPackage.xdc $(XPKGVPATH)
+
+ifneq (clean,$(MAKECMDGOALS))
+/Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/services/global/java/package.jar:
+package/package.xdc.inc: /Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/services/global/java/package.jar
+/Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/tar.jar:
+package/package.xdc.inc: /Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/tar.jar
+/Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/ecj.jar:
+package/package.xdc.inc: /Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/ecj.jar
+/Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/js.jar:
+package/package.xdc.inc: /Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/js.jar
+/Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/antlr.jar:
+package/package.xdc.inc: /Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/antlr.jar
+/Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/services/spec/java/package.jar:
+package/package.xdc.inc: /Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/services/spec/java/package.jar
+/Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/gen/java/package.jar:
+package/package.xdc.inc: /Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/gen/java/package.jar
+/Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/cmd/java/package.jar:
+package/package.xdc.inc: /Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/cmd/java/package.jar
+/Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/xsr/java/package.jar:
+package/package.xdc.inc: /Users/venkim/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/xsr/java/package.jar
+endif
+# goals for files generated during schema generation but unspecified by schema's pattern rule
+
