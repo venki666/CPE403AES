@@ -1,0 +1,38 @@
+/**
+ * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
+ * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
+ * @cliArgs --board "/ti/boards/CC1352R1_LAUNCHXL" --product "simplelink_cc13x2_26x2_sdk@4.30.00.54"
+ * @versions {"data":"2020090214","timestamp":"2020090214","tool":"1.6.0+1543","templates":"2020090214"}
+ */
+
+/**
+ * Import the modules used in this configuration.
+ */
+const GPIO  = scripting.addModule("/ti/drivers/GPIO");
+const GPIO1 = GPIO.addInstance();
+const GPIO2 = GPIO.addInstance();
+const Power = scripting.addModule("/ti/drivers/Power");
+const RTOS  = scripting.addModule("/ti/drivers/RTOS");
+
+/**
+ * Write custom configuration values to the imported modules.
+ */
+GPIO1.$hardware          = system.deviceData.board.components.LED_RED;
+GPIO1.$name              = "CONFIG_GPIO_LED_0";
+GPIO1.initialOutputState = "High";
+GPIO1.pinInstance.$name  = "CONFIG_PIN_0";
+
+GPIO2.$name             = "CONFIG_GPIO_LED_1";
+GPIO2.$hardware         = system.deviceData.board.components.LED_GREEN;
+GPIO2.pinInstance.$name = "CONFIG_PIN_1";
+
+const CCFG              = scripting.addModule("/ti/devices/CCFG", {}, false);
+CCFG.ccfgTemplate.$name = "ti_devices_CCFGTemplate0";
+
+/**
+ * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
+ * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
+ * re-solve from scratch.
+ */
+GPIO1.gpioPin.$suggestSolution = "boosterpack.39";
+GPIO2.gpioPin.$suggestSolution = "boosterpack.40";

@@ -1,0 +1,12 @@
+package.xdc
+package.xs
+package/xconfig_TIRTOS_demo.sch
+package/.vers_g180
+package/.vers_r170
+package/.vers_b160
+package/.xdc-B06
+package/xconfig_TIRTOS_demo.java
+package/xconfig_TIRTOS_demo.class
+package/package_xconfig_TIRTOS_demo.c
+package/package.defs.h
+package/xconfig_TIRTOS_demo.ccs

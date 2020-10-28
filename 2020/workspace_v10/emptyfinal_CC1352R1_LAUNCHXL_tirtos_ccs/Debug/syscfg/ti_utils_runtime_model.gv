@@ -1,0 +1,46 @@
+digraph Model
+{
+    graph[rankdir=LR]
+
+    // mod.$name=/ti/devices/CCFG
+    ti_devices_CCFG -> ti_devices_CCFGTemplate0
+
+    // mod.$name=/ti/devices/CCFGTemplate
+
+    // mod.$name=/ti/devices/DriverLib
+
+    // mod.$name=/ti/display/Display
+    CONFIG_Display_0 -> ti_drivers_Board
+    CONFIG_Display_0 -> CONFIG_UART_0
+
+    // mod.$name=/ti/drivers/ADC
+    CONFIG_ADC_0 -> ti_drivers_Power
+    CONFIG_ADC_0 -> ti_drivers_Board
+    CONFIG_ADC_0 -> CONFIG_PIN_1
+
+    // mod.$name=/ti/drivers/Board
+    ti_drivers_Board -> ti_devices_DriverLib
+
+    // mod.$name=/ti/drivers/GPIO
+    ti_drivers_GPIO -> ti_drivers_Power
+    ti_drivers_GPIO -> ti_drivers_Board
+    CONFIG_GPIO_LED_0 -> CONFIG_PIN_0
+    CONFIG_GPIO_LED_1 -> CONFIG_PIN_4
+    CONFIG_GPIO_LED_B -> CONFIG_PIN_5
+
+    // mod.$name=/ti/drivers/PIN
+    ti_drivers_PIN -> ti_drivers_Power
+    ti_drivers_PIN -> ti_drivers_Board
+
+    // mod.$name=/ti/drivers/Power
+    ti_drivers_Power -> ti_devices_CCFG
+    ti_drivers_Power -> ti_drivers_Board
+
+    // mod.$name=/ti/drivers/RTOS
+
+    // mod.$name=/ti/drivers/UART
+    CONFIG_UART_0 -> ti_drivers_Power
+    CONFIG_UART_0 -> ti_drivers_Board
+    CONFIG_UART_0 -> CONFIG_PIN_2
+    CONFIG_UART_0 -> CONFIG_PIN_3
+}

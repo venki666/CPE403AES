@@ -1,0 +1,228 @@
+[
+	{
+		"viewName": "Basic",
+		"id": "rovModuleView_0",
+		"left": 0,
+		"top": 0,
+		"width": "517px",
+		"height": "138px",
+		"position": "absolute",
+		"zIndex": "10",
+		"repeatDivider": 1,
+		"repeatRefreshEnabled": true,
+		"defaultSize": false,
+		"moduleName": "ti.sysbios.knl.Task",
+		"viewsData": {
+			"ti.sysbios.knl.Task.Basic": {
+				"columnStates": [
+					{
+						"name": "address",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "label",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "priority",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "mode",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "fxn",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "arg0",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "arg1",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "stackSize",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "stackBase",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "curCoreId",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "affinity",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					}
+				],
+				"hasFormats": true,
+				"width": "828px",
+				"height": "110px",
+				"fixedFont": false
+			}
+		},
+		"dashboardVersion": "1.0",
+		"inFullScreenMode": false,
+		"comment": "This is a dashboard file for the Runtime Object View (ROV) tool"
+	},
+	{
+		"viewName": "Idle.funcList",
+		"id": "rovModuleView_1",
+		"left": 0,
+		"top": 138,
+		"width": "277px",
+		"height": "95px",
+		"position": "absolute",
+		"zIndex": "15",
+		"repeatDivider": 1,
+		"repeatRefreshEnabled": true,
+		"defaultSize": false,
+		"moduleName": "ti.sysbios.knl.Idle",
+		"viewsData": {
+			"ti.sysbios.knl.Idle.Idle.funcList": {
+				"columnStates": [
+					{
+						"name": "index",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "coreId",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "fxn",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					}
+				],
+				"hasFormats": true,
+				"width": "277.203125px",
+				"height": "101px",
+				"defaultSize": false,
+				"fixedFont": false
+			}
+		},
+		"dashboardVersion": "1.0",
+		"inFullScreenMode": false
+	},
+	{
+		"viewName": "Basic",
+		"id": "rovModuleView_2",
+		"left": 193,
+		"top": 138,
+		"width": "372px",
+		"height": "95px",
+		"position": "absolute",
+		"zIndex": "18",
+		"repeatDivider": 1,
+		"repeatRefreshEnabled": true,
+		"defaultSize": true,
+		"moduleName": "ti.sysbios.knl.Semaphore",
+		"viewsData": {
+			"ti.sysbios.knl.Semaphore.Basic": {
+				"columnStates": [
+					{
+						"name": "address",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "label",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "event",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "eventId",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "mode",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "count",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "pendedTasks",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					}
+				],
+				"fixedFont": false,
+				"hasFormats": true
+			}
+		},
+		"dashboardVersion": "1.0",
+		"inFullScreenMode": false
+	},
+	{
+		"elemName": "xdc-rov-polymerUI-examples-graph_stacks",
+		"viewName": "Stacks Graph",
+		"elemPath": "addons/graph_stacks",
+		"id": "rovView_0",
+		"left": 525,
+		"top": -8,
+		"width": "410px",
+		"height": "310px",
+		"position": "",
+		"zIndex": "8",
+		"repeatDivider": 1,
+		"repeatRefreshEnabled": true,
+		"defaultSize": true,
+		"persistProperties": {
+			"graphWidth": 390,
+			"graphHeight": 264
+		},
+		"dashboardVersion": "1.0",
+		"inFullScreenMode": false
+	},
+	"overview"
+]
