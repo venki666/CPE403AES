@@ -1,0 +1,1 @@
+"./project0.obj" "./startup_ccs.obj" "./uartstdio.obj" "../project0_ccs.cmd" -llibc.a -l"/Users/venkatesanmuthukumar/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib" 
