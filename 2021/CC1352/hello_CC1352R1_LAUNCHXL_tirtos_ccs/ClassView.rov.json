@@ -1,0 +1,280 @@
+[
+	{
+		"viewName": "Basic",
+		"id": "rovModuleView_0",
+		"left": 0,
+		"top": 0,
+		"width": "814px",
+		"height": "108px",
+		"position": "absolute",
+		"zIndex": "2",
+		"repeatDivider": 1,
+		"repeatRefreshEnabled": true,
+		"defaultSize": true,
+		"moduleName": "ti.sysbios.knl.Task",
+		"viewsData": {
+			"ti.sysbios.knl.Task.Basic": {
+				"columnStates": [
+					{
+						"name": "address",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "label",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "priority",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "mode",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "fxn",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "arg0",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "arg1",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "stackSize",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "stackBase",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "curCoreId",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "affinity",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					}
+				],
+				"fixedFont": false,
+				"hasFormats": true
+			}
+		},
+		"dashboardVersion": "1.0",
+		"inFullScreenMode": false,
+		"comment": ""
+	},
+	{
+		"viewName": "Module",
+		"id": "rovModuleView_1",
+		"left": 0,
+		"top": 108,
+		"width": "340px",
+		"height": "95px",
+		"position": "absolute",
+		"zIndex": "5",
+		"repeatDivider": 1,
+		"repeatRefreshEnabled": true,
+		"defaultSize": true,
+		"moduleName": "xdc.rov.runtime.Monitor",
+		"viewsData": {
+			"xdc.rov.runtime.Monitor.Module": {
+				"columnStates": [
+					{
+						"name": "address",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "command",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "readFxn",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "writeFxn",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					}
+				],
+				"fixedFont": false,
+				"hasFormats": false
+			}
+		},
+		"dashboardVersion": "1.0",
+		"inFullScreenMode": false
+	},
+	{
+		"viewName": "Basic",
+		"id": "rovModuleView_2",
+		"left": 341,
+		"top": 108,
+		"width": "362px",
+		"height": "95px",
+		"position": "absolute",
+		"zIndex": "29",
+		"repeatDivider": 1,
+		"repeatRefreshEnabled": true,
+		"defaultSize": true,
+		"moduleName": "ti.sysbios.heaps.HeapMem",
+		"viewsData": {
+			"ti.sysbios.heaps.HeapMem.Basic": {
+				"columnStates": [
+					{
+						"name": "address",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "label",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "buf",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "minBlockAlign",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "sectionName",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					}
+				],
+				"fixedFont": false,
+				"hasFormats": true
+			}
+		},
+		"dashboardVersion": "1.0",
+		"inFullScreenMode": false
+	},
+	{
+		"viewName": "Basic",
+		"id": "rovModuleView_3",
+		"left": 0,
+		"top": 203,
+		"width": "813px",
+		"height": "122px",
+		"position": "absolute",
+		"zIndex": "31",
+		"repeatDivider": 1,
+		"repeatRefreshEnabled": true,
+		"defaultSize": true,
+		"moduleName": "ti.sysbios.family.arm.m3.Hwi",
+		"viewsData": {
+			"ti.sysbios.family.arm.m3.Hwi.Basic": {
+				"columnStates": [
+					{
+						"name": "address",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					},
+					{
+						"name": "halHwiHandle",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "label",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "type",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "intNum",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "priority",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "group",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "subPriority",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Decimal"
+					},
+					{
+						"name": "fxn",
+						"checked": true,
+						"hasFormat": false,
+						"format": null
+					},
+					{
+						"name": "arg",
+						"checked": true,
+						"hasFormat": true,
+						"format": "Hex"
+					}
+				],
+				"fixedFont": false,
+				"hasFormats": true
+			}
+		},
+		"dashboardVersion": "1.0",
+		"inFullScreenMode": false
+	},
+	"ClassView"
+]

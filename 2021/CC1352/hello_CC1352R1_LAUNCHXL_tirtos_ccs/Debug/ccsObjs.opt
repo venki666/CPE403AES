@@ -1,0 +1,1 @@
+"./hello.obj" "./syscfg/ti_devices_config.obj" "./syscfg/ti_drivers_config.obj" "../cc13x2_cc26x2_tirtos.cmd" -l"configPkg/linker.cmd" -lti_utils_build_linker.cmd.genlibs -l"ti/devices/cc13x2_cc26x2/driverlib/bin/ccs/driverlib.lib" -llibc.a 
