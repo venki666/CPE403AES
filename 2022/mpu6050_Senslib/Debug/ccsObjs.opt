@@ -1,0 +1,8 @@
+"./i2cm_drv.obj"
+"./main.obj"
+"./mpu6050.obj"
+"./tm4c123gh6pm_startup_ccs.obj"
+"./uartstdio.obj"
+"../blinky_ccs.cmd"
+-llibc.a
+-l"/home/venki/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib"
