@@ -1,0 +1,6 @@
+"./mpu6050_tst.obj"
+"./startup_ccs.obj"
+"./uartstdio.obj"
+"../mpu6050_tst.cmd"
+-llibc.a
+-l"/home/venki/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib"
