@@ -1,0 +1,13 @@
+"./buttonled.obj"
+"./syscfg/ti_drivers_config.obj"
+"./main_tirtos.obj"
+"../MSP_EXP432E401Y_TIRTOS.cmd"
+-l"ti/display/lib/display.aem4f"
+-l"ti/grlib/lib/ccs/m4f/grlib.a"
+-l"third_party/spiffs/lib/ccs/m4f/spiffs.a"
+-l"ti/drivers/lib/drivers_msp432e4.aem4f"
+-l"third_party/fatfs/lib/ccs/m4f/fatfs.a"
+-l"ti/dpl/lib/dpl_msp432e4.aem4f"
+-l"/home/oem/workspace_v12/tirtos_builds_MSP_EXP432E401Y_release_ccs/Debug/configPkg/linker.cmd"
+-l"ti/devices/msp432e4/driverlib/lib/ccs/m4f/msp432e4_driverlib.a"
+-llibc.a
