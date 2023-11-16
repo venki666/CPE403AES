@@ -34,7 +34,7 @@ void initI2C0(void)
 
   void readI2C(uint8_t slave_addr, uint8_t reg, int *data)
   {
-    I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr, true);
+    I2CMasterSlaveAddrSet(I2C0_BASE, slave_addr, false);
     I2CMasterDataPut(I2C0_BASE, reg);
     I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_START);
     while(I2CMasterBusy(I2C0_BASE));
